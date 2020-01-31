@@ -1,7 +1,14 @@
-body{
+table{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-size: larger;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(60, 60, 60);
 }

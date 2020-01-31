@@ -572,11 +572,324 @@
                     <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide31_1_relatorio_siszon.jpg" alt="Relatório da busca de zoneamento">
                 </p>
     <!-- Menu de ferramentas > botões exceto pesquisa de novo -->
+        
+        <h2>Ferramentas</h2>
+            <h3>Informações fiscais do lote</h3>
+                <p>O GeoSampa disponibiliza informações fiscais do lote, numa camada que é atualizada pela Secretaria da Fazenda. 
+                    Essa camada substitui os croquis fiscais, que não são atualizados desde junho de 2019.
+                </p>
+                <p>Todas as informações do croqui fiscal estão no painel de informações (acessado pelo botão “i”) conectado diretamente 
+                    ao banco de dados da Secretaria da Fazenda.
+                </p>
+                <br>
+                <p>1° Aproxime o zoom para possibilitar a visualização e permitir acionar a camada;
+                </p>
+                <p>2° Ligue a camada “Lotes”, no grupo: Cadastro / Cadastro Fiscal / <ins>Lote</ins>;
+                </p>
+                <p>3° Clique no botão “i” (Informação), em seguida, no lote de interesse. Aparecerá uma caixa de diálogo comas informações fiscais do lote.
+                </p>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide32_1_ex_botao_i_lote.jpg" alt="Exemplo do botão 'i' aplicado à camada 'Lote'">
+                <br>
+                <p>Em lotes ocupados por condomínio aparecerão as informações de cada unidade.
+                </p>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide33_1_ex_botao_i_lote_condominio.jpg" 
+                alt="Exemplo do botão 'i' aplicado à camada 'Lote' no caso de condomínio">
+
+        <h2>Obter informação das camadas</h2>
+                <p>Habilite, no menu à direita, as camadas das quais buscará mais informações. Lembre-se que as informações somente aparecerão para
+                    as camadas habilitadas no menu.A seguir, clique no botão 
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide10_4_botao_informacao.jpg"> e após,
+                    no elemento de interesse no mapa.
+                </p>
+                <p>
+                    Você poderá consultar o menu de camadas para verificar os símbolos,
+                    legendas e outras informações. O objeto pesquisado ficará destacado
+                    no mapa com a cor azul. Caso haja mais de uma informação para o
+                    mesmo ponto, os resultados aparecerão no quadro de informação.
+                </p>
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide34_1_ex_botao_i_abastecimento_mercados.jpg" 
+                    alt="Exemplo do botão 'i' aplicado à camada 'Mercados Municipais'">
                 
+        <h2>Como obter o SQL</h2>
+                <p>
+                    O código SQL (setor-quadra-lote) representa a identificação dos lotes no Cadastro Imobiliário Fiscal da PMSP. Este código 
+                    corresponde ao número do contribuinte e pode ser localizado no boleto de pagamento do IPTU.
+                </p>
+                <p>
+                    A localização poderá ser feita a partir endereço do imóvel. Utilize a ferramenta de pesquisa do menu, escolha a aba ENDEREÇO e
+                    preencha os respectivos campos. Você também pode navegar pelo mapa e localizar a quadra do imóvel.
+                </p>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide35_1_ex_pesquisa_endereco.jpg" 
+                    alt="Exemplo do botão 'i' aplicado à camada 'Mercados Municipais'">
+                <br>
+                <p>
+                    À direita, busque o grupo Cadastro e abra o subgrupo Cadastro Fiscal. Habilite a camada LOTE . Clicar no botão “I” do menu (obter
+                    informação).
+                </p>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide36_1_ex_botao_i_sql.jpg" 
+                    alt="Exemplo do botão 'i' aplicado à camada 'Lote' para obter SQL">
+        
+        <h2>Acesso a Web Service (Map e Feature)</h2>
+                <p>
+                    O GeoSampa permite acesso ao serviço de mapa pela Internet, o chamado Web Service. Esse protocolo possibilita a disponibilização
+                    dos mapas num formato portável e multi-plataforma para armazenamento num repositório ou para transferência entre
+                    aplicações. Isso significa que os mapas do GeoSampa podem ser acessados por um software, de forma “on line”, sem a necessidade de
+                    baixar os arquivos.
+                </p>
+                <p>Para isso, é necessário copiar os links:
+                    <table id="WMSeWFS">
+                        <tr>
+                            <th>Tipo do serviço</th>                        <th>Link</th>
+                            <!-- links sem formatação de link pra poder copiar no QGIS, e não clicar pra abrir-->
+                        </tr>
+                        <tr>
+                            <td>WMS - Camadas</td>      <td>http://wms.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+                        </tr>
+                        <tr>
+                            <td>WMS - Mapas Base</td>   <td>http://raster.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+                        </tr>
+                        <tr>
+                            <td>WFS - Camadas</td>      <td>http://wfs.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wfs</td>
+                        </tr>
+                            
+                    </table>
+                </p>
+            
+        <h2>Download de arquivos</h2>
+                <p>O conteúdo do GeoSampa está disponível para download além dos mapas articulados. Para fazer o download, clique em
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_1_botao_download.jpg" 
+                    alt="Botão para download de camadas"> escolha o tema de interesse e emseguida, os arquivos desejados.
+                </p>
+                <p>Alguns arquivos podem estar divididos por distritos (edificações, por exemplo) devido ao grande volume de dados.</p>
+                <p>Lembre-se de verificar o local que serão armazenados os arquivos obtidos pelo download nas configurações de seu navegador.</p>
+                <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
+                <br>
+                <table>
+                    <tr>
+                        <td>PDF</td>            <td><b>Portable Document Format:</b> arquivo para visualização, contendo o mapeamento 
+                            planialtimétrico do MDC</td>
+                    </tr>
+                    <tr>
+                        <td>DXF</td>           <td><b>Drawing Exchange Format:</b> arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. 
+                            Os arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano (SCM), representadas como quadrículas no mapa</td>
+                    </tr>
+                    <tr>
+                        <td>DXF/MDT</td>           <td>arquivo em formato CAD, contendo o modelo digital do terreno, ou seja, altimetria do MDC 
+                            representada por nuvemde pontos 3D</td>
+                    </tr>
+                    <tr>
+                        <td>SHP</td>           <td><b>Shapefile</b></td>
+                    </tr>
+                    <tr>
+                        <td>KMZ</td>           <td><b>Keyhole Markup Zipped</b></td>
+                    </tr>
+                    <tr>
+                        <td>XLS/CSV</td>           <td>planilhas de dados e séries históricas</td>
+                    </tr>
+                </table>
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_2_janela_download_camadas.jpg" 
+                alt="Janela de download de camadas">
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_3_janela_download_camada_distrito.jpg" 
+                alt="Janela de download de camadas, selecionando 'Distritos', do grupo 'Limites Administrativos'">
 
+        <h2>Impressão</h2>
+                <p>Para imprimir seumapa clique no botão  <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide39_1_botao_imprimir.jpg" 
+                    alt="Botão 'Imprimir'">
+                </p>
+                <p>Lá você poderá escrever um título a sua escolha (opcional) e também optar pela exibição da escala gráfica e legenda.</p>
+                <p>Clicando em "visualizar impressão" você poderá verificar, além da figura do mapa, outros dados como a fonte da informação (link), 
+                    data e hora da consulta e a legenda das camadas ativas.
+                </p>
+                <p>A impressão está padronizada para o formato A4, garantindo, portanto a confiabilidade da escala numérica informada no mapa.</p>
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide39_2_janelas_impressão.jpg" 
+                    alt="Janelas de impressão">
 
+        <h2>Obtendo distâncias</h2>
+                <p>A ferramenta <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide40_1_botao_medir.jpg" 
+                    alt="Botão para Calcular distância, área e ângulo"> permite medir a distância entre dois pontos. Após clicar no botão desta ferramenta, 
+                    clique no ponto inicial a partir do qual realizará sua medição. Basta clicar uma vez no mapa. Após, clique no ponto final. 
+                    A distância entre eles aparecerá e ficará registrada na tela.
+                </p>
+                <p>Para continuar sua medição, poderá clicar em mais pontos. Verificará que as distâncias parciais ficarão registradas e ao final 
+                    de sua medição, o mapa mostrará a soma das distâncias percorridas. Para finalizar sua medição, basta clicar duas vezes (duplo 
+                    clique) no último ponto.
+                </p>
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide40_2_medida_distância.jpg" 
+                    alt="Exemplo de medida de distância">
 
-    
+        <h2>Glossário e siglas</h2>
+                <table>
+                    <tr>
+                        <td>MDC</td>               <td>Mapa Digital da Cidade</td>
+                    </tr>
+                    <tr>
+                        <td>RMSP</td>               <td>Região Metropolitana de São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>UTM</td>               <td>Sistema de coordenadas cartesianas - Universal Transversa de Mercator</td>
+                    </tr>
+                    <tr>
+                        <td>UBS</td>               <td>Unidade Básica de Saúde</td>
+                    </tr>
+                    <tr>
+                        <td>IPVS</td>               <td>Índice Paulista de Vulnerabilidade Social</td>
+                    </tr>
+                    <tr>
+                        <td>PDE</td>               <td>Plano Diretor Estratégico</td>
+                    </tr>
+                    <tr>
+                        <td>ZEIS</td>               <td>Zona Especial de Interesse Social</td>
+                    </tr>
+                    <tr>
+                        <td>EDIFICAÇÃO</td>               <td>Obra coberta destinada a abrigar atividade humana ou qualquer instalação, equipamento e 
+                            material. (Lei nº 16.642/2017 - Código de Obras)</td>
+                    </tr>
+                    <tr>
+                        <td>IMÓVEL</td>               <td>O lote, público ou privado, edificado, ou não, assim definido:
+                            <ol type="A">
+                                <li>imóvel edificado: aquele ocupado total ou parcialmente com edificação permanente;</li>
+                                <li>imóvel não-edificado: aquele não ocupado ou ocupado com edificação transitória, em que não se exerçam 
+                                    atividades nos termos da legislação de uso e ocupação do solo. LOGRADOURO-Passeio público. 
+                                    <!-- conferir essa parte de 'LOGRADOURO'-->
+                                </li>
+                              </ol>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LOTE</td>               <td>A parcela de terreno resultante de loteamento, desmembramento ou desdobro, contida em uma 
+                            quadra com, pelo menos, uma divisa lindeira a via de circulação oficial.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>LOTEAMENTO</td>               <td>É a subdivisão de glebas em lotes destinados à edificação, com aberturas de novas vias de
+                            circulação, de logradouros públicos ou prolongamento, modificação ou ampliação das vias já existentes. 
+                            O loteamento é precedido de diretrizes para fixação das áreas verdes, institucionais e sistema viários públicos 
+                            e eventuais faixas não edificáveis (SEHAB).</td>
+                    </tr>
+                    <tr>
+                        <td>LPUOS</td>               <td>Legislação <!-- Poderia escrever 'Lei' ao invés de 'Legislação'--> de Parcelamento, Uso e 
+                            Ocupação do Solo.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>NON AEDIFICANDI</td>               <td>Supressão de vegetação localizada em área de preservação permanente. 
+                            Lote onde não pode haver nenhum tipo de assentamento urbano, restrito a áreas de conservação ambiental, próximo a 
+                            represas, etc.</td>
+                    </tr>
+                </table>
+        <h2>Saiba mais sobre o GeoSampa</h2>
+            <h3>Histórico</h3>
+                <p>O MDC é o suporte cartográfico do Sistema de Informações
+                    Geográficas do Município de São Paulo (SIG-SP), regulamentado pelo
+                    Decreto 57.770, de 3 de julho de 2017.
+                </p>
+                <p>O Mapa Digital da Cidade (MDC), é uma base cartográfica digital
+                    cadastral nas escalas 1:1.000, na área urbana, e 1:5.000, na área rural
+                    do Município de São Paulo, resultado de levantamento
+                    aerofotogramétrico realizado no ano de 2004, com recursos do
+                    Programa de Modernização da Administração Tributária (PMAT), do
+                    BancoNacional doDesenvolvimento (BNDES).
+                </p>
+                <p>A construção do MDC incluiu a implantação da Rede Básica de
+                    Referência Geodésica do Município de São Paulo, com 302 marcos,
+                    cobertura aerofotogramétrica colorida com cerca de 12 mil fotos, apoio
+                    de campo planialtimétrico, aerotriangulação, restituição digital, modelo
+                    digital do terreno, reambulação, edição, preparação de arquivos para
+                    uso em sistema de informações geográficas, elaboração de mais de
+                    quatromil ortofotos digitais, construção de base de dados cadastrais de
+                    imóveis e logradouros, entre outros produtos e serviços.
+                </p>
+                <p>Esses trabalhos permitiram a modernização do sistema cartográfico
+                    municipal, que já em 1978 foi digitalizado em um sistema pioneiro
+                    denominado Geocodificação de Logradouros – GEOLOG. Os desafios
+                    da atualização e disseminação desses dados demandam permanente
+                    evolução tecnológica e organizacional.
+                </p>
+                <p>
+                    Em 2017, foi realizado um aerolevantamento que produziu além de ortofotos 
+                    e mapeamento detalhado da vegetação, a cobertura de toda a cidade por dados laser/lidar.
+                </p>
+            <h3>O GeoSampa</h3>
+                <p>
+                    O resultado dessas atividades pode ser usado no portal GeoSampa, disponível desde dezembro de 2014.
+                </p>
+                <p>A partir do mapa também é possível realizar download de arquivos
+                    georreferenciados, mapas, plantas, croquis, imagens de satélite, fotos
+                    aéreas e ortofotos.
+                </p>
+                <p>Atualmente, são disponibilizadas mais de 200 camadas temáticas com
+                    informações cadastrais (310 setores, 55.000 quadras e 2,5 milhões de
+                    lotes fiscais), a localização de cada uma das cerca de 650.000 árvores
+                    do sistema viário, os perímetros do zoneamento da Cidade, a
+                    localização dos equipamentos públicos nas áreas de educação,
+                    saúde, assistência social, cultura, esportes e lazer, a
+                    localização e situação das 400 áreas de risco do município. Arquivos
+                    em formatos .shp, .kmz, .dxf, .pdf e .jpg também podem ser baixados
+                    contendo tanto as informações vetoriais do mapa como fotos, ortofotos
+                    e cartas.
+                </p>
+                <p>Para o servidor, o sistema tem permitido a redução do tempo de
+                    resposta a processos administrativos pelo acesso único e simplificado
+                    aos dados. Para o público externo tais como órgãos públicos estaduais
+                    e federais, estudantes, empresas, conselhos gestores, organizações
+                    não governamentais, comunidades digitais e moradores, viabiliza-se o
+                    acesso e a transparência das informações públicas. O acesso a um
+                    único portal para consulta e aquisição de arquivos geoespaciais em
+                    formato aberto permite assim, o acompanhamento dos dados de
+                    múltiplos temas emuma única aplicação.
+                </p>
+            <h3>Projeto SIG-SP</h3>
+                <p>O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
+                    divulgação de informações mapeadas como subsídios para o planejamento,
+                    implementação e gestão de políticas públicas nas áreas de atuação do governo
+                    municipal, priorizando o atendimento ao cidadão.
+                </p>
+                <p>O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
+                    procedimentos organizacionais, dados, programas e equipamentos computacionais,
+                    abrangendo os dados sociais, culturais, econômicos, financeiros, patrimoniais,
+                    urbanísticos, administrativos, físico-territoriais, ambientais, geológicos, geográficos,
+                    cartográficos e outros de interesse do Município, sendo, essencialmente, um sistema
+                    aberto, dinâmico e permanente, emconstante adequação à realidade urbana.
+                </p>
+                <p>Nesses termos e diante do grande volume de informações disponíveis na
+                    administração municipal, a Prefeitura de São Paulo optou pela adoção de uma visão
+                    integradora. Ao invés da construção de um novo sistema ou mesmo da migração de
+                    todos os dados para uma base única, optou-se pela criação de um ambiente
+                    compartilhado que integre dados geográficos de referência (distritos, quadras fiscais,
+                    cartografia, por exemplo) aos sistemas de informações já existentes, permitindo a
+                    visualização das informações oriundas destes diretamente no mapa. A
+                    disponibilização de um volume de informações de aproximadamente 10 terabytes a
+                    uma grande quantidade de usuários representa um desafio, principalmente, se
+                    consideradas as questões como integridade e segurança dos dados.
+                </p>
+                <p>O projeto de construção do SIG-SP vem sendo implantado passo a passo, de
+                    modo a permitir a disponibilização de ferramentas aos usuários já nos
+                    primeiros meses de projeto. Como principais etapas, destacam-se 1) a
+                    construção da base corporativa de dados pela organização dos dados
+                    cartográficos (Mapa Digital da Cidade), cadastrais (setor, quadra, lotes,
+                    logradouros) e temáticos; 2) a implantação de um sistema de infra-estrutura
+                    dos dados municipais; 3) elaboração do catálogo de metadados e 4) a
+                    integração das bases e sistemas já existentes via conversão de dados
+                    espaciais.
+                </p>
+                <p>Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
+                    compatíveis com as diretrizes nacionais de dados espaciais e ainda
+                    tecnologias GEOSERVER / OpenLayers para a construção da Infraestrutura
+                    de Dados Espaciais, além do portal demapas. Trata-se do primeiro projeto de
+                    geoprocessamento na Prefeitura de São Paulo a usar tecnologia de software
+                    livre.
+                </p>
+                <p>Dentre os requisitos técnicos de implantação, vale destacar a definição de
+                    padrões de intercâmbio de dados geográficos, compatível com a Open
+                    Geospatial Consortium – OGC, concretizando uma visão voltada para a
+                    transparência, compartilhamento que garanta a operabilidade e o efetivo uso
+                    das informações geoespaciais.
+                </p>
+
     </body>
 
 </html>

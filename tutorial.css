@@ -18,9 +18,13 @@ table{
 }
 
 table, th, td{
-    border: 1px black;
+    border: 1px solid black;
 }
 
 #tabelaDatum {
     width: 30%;
+}
+
+#WMSeWFS{
+    width: 60%;
 }

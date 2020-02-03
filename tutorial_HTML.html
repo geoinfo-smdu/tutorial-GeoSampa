@@ -442,8 +442,9 @@
         <h2>Consulta ao licenciamento - sistema SLC-e</h2>
 
                 <p>
-                    À esquerda, localize a ferramenta “Pesquisar” <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/lupa.jpg">, selecione a aba ”Licenciamento” e 
-                    preencha as informações de setor, quadra e lote, depois clique em “Listar”.
+                    À esquerda, localize a ferramenta “Pesquisar” 
+                    <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/lupa.jpg">, 
+                    selecione a aba ”Licenciamento” e preencha as informações de setor, quadra e lote, depois clique em “Listar”.
                 </p>
                 <p>
                     Para obter um relatório em PDF, vá até “Documento Alvará SLC-e”, cliquei em “Clique aqui para abrir”.
@@ -471,6 +472,7 @@
                             </ul>
 
                         </li>
+                        <br>
                         <li>
                             Pedidos de licenças complementares tais como:
 
@@ -664,7 +666,7 @@
                 <p>Lembre-se de verificar o local que serão armazenados os arquivos obtidos pelo download nas configurações de seu navegador.</p>
                 <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
                 <br>
-                <table>
+                <table id="extensoes">
                     <tr>
                         <td>PDF</td>            <td><b>Portable Document Format:</b> arquivo para visualização, contendo o mapeamento 
                             planialtimétrico do MDC</td>
@@ -695,14 +697,21 @@
                 alt="Janela de download de camadas, selecionando 'Distritos', do grupo 'Limites Administrativos'">
 
         <h2>Impressão</h2>
-                <p>Para imprimir seumapa clique no botão  <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide39_1_botao_imprimir.jpg" 
+                <p>
+                    Para imprimir seumapa clique no botão  <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide39_1_botao_imprimir.jpg" 
                     alt="Botão 'Imprimir'">
                 </p>
-                <p>Lá você poderá escrever um título a sua escolha (opcional) e também optar pela exibição da escala gráfica e legenda.</p>
-                <p>Clicando em "visualizar impressão" você poderá verificar, além da figura do mapa, outros dados como a fonte da informação (link), 
-                    data e hora da consulta e a legenda das camadas ativas.
+                <p>
+                    Lá você poderá escrever um título a sua escolha (opcional) e também optar pela exibição da escala gráfica e legenda.
                 </p>
-                <p>A impressão está padronizada para o formato A4, garantindo, portanto a confiabilidade da escala numérica informada no mapa.</p>
+                <p>
+                    Clicando em "visualizar impressão" você poderá verificar, além da figura do mapa, outros dados como a 
+                    fonte da informação (link), data e hora da consulta e a legenda das camadas ativas.
+                </p>
+                <p>
+                    A impressão está padronizada para o formato A4, garantindo, portanto a confiabilidade da escala numérica 
+                    informada no mapa.
+                </p>
                 <br>
                 <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide39_2_janelas_impressão.jpg" 
                     alt="Janelas de impressão">
@@ -722,7 +731,7 @@
                     alt="Exemplo de medida de distância">
 
         <h2>Glossário e siglas</h2>
-                <table>
+                <table id="glossario">
                     <tr>
                         <td>MDC</td>               <td>Mapa Digital da Cidade</td>
                     </tr>
@@ -792,7 +801,7 @@
                     do Município de São Paulo, resultado de levantamento
                     aerofotogramétrico realizado no ano de 2004, com recursos do
                     Programa de Modernização da Administração Tributária (PMAT), do
-                    BancoNacional doDesenvolvimento (BNDES).
+                    Banco Nacional do Desenvolvimento (BNDES).
                 </p>
                 <p>A construção do MDC incluiu a implantação da Rede Básica de
                     Referência Geodésica do Município de São Paulo, com 302 marcos,
@@ -800,7 +809,7 @@
                     de campo planialtimétrico, aerotriangulação, restituição digital, modelo
                     digital do terreno, reambulação, edição, preparação de arquivos para
                     uso em sistema de informações geográficas, elaboração de mais de
-                    quatromil ortofotos digitais, construção de base de dados cadastrais de
+                    quatro mil ortofotos digitais, construção de base de dados cadastrais de
                     imóveis e logradouros, entre outros produtos e serviços.
                 </p>
                 <p>Esses trabalhos permitiram a modernização do sistema cartográfico
@@ -811,7 +820,7 @@
                 </p>
                 <p>
                     Em 2017, foi realizado um aerolevantamento que produziu além de ortofotos 
-                    e mapeamento detalhado da vegetação, a cobertura de toda a cidade por dados laser/lidar.
+                    e mapeamento detalhado da vegetação, a cobertura de toda a cidade por dados LASER/LiDAR.
                 </p>
             <h3>O GeoSampa</h3>
                 <p>
@@ -832,7 +841,8 @@
                     contendo tanto as informações vetoriais do mapa como fotos, ortofotos
                     e cartas.
                 </p>
-                <p>Para o servidor, o sistema tem permitido a redução do tempo de
+                <p>
+                    Para o servidor, o sistema tem permitido a redução do tempo de
                     resposta a processos administrativos pelo acesso único e simplificado
                     aos dados. Para o público externo tais como órgãos públicos estaduais
                     e federais, estudantes, empresas, conselhos gestores, organizações
@@ -843,19 +853,22 @@
                     múltiplos temas emuma única aplicação.
                 </p>
             <h3>Projeto SIG-SP</h3>
-                <p>O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
+                <p>
+                    O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
                     divulgação de informações mapeadas como subsídios para o planejamento,
                     implementação e gestão de políticas públicas nas áreas de atuação do governo
                     municipal, priorizando o atendimento ao cidadão.
                 </p>
-                <p>O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
+                <p>
+                    O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
                     procedimentos organizacionais, dados, programas e equipamentos computacionais,
                     abrangendo os dados sociais, culturais, econômicos, financeiros, patrimoniais,
                     urbanísticos, administrativos, físico-territoriais, ambientais, geológicos, geográficos,
                     cartográficos e outros de interesse do Município, sendo, essencialmente, um sistema
                     aberto, dinâmico e permanente, emconstante adequação à realidade urbana.
                 </p>
-                <p>Nesses termos e diante do grande volume de informações disponíveis na
+                <p>
+                    Nesses termos e diante do grande volume de informações disponíveis na
                     administração municipal, a Prefeitura de São Paulo optou pela adoção de uma visão
                     integradora. Ao invés da construção de um novo sistema ou mesmo da migração de
                     todos os dados para uma base única, optou-se pela criação de um ambiente
@@ -866,7 +879,8 @@
                     uma grande quantidade de usuários representa um desafio, principalmente, se
                     consideradas as questões como integridade e segurança dos dados.
                 </p>
-                <p>O projeto de construção do SIG-SP vem sendo implantado passo a passo, de
+                <p>
+                    O projeto de construção do SIG-SP vem sendo implantado passo a passo, de
                     modo a permitir a disponibilização de ferramentas aos usuários já nos
                     primeiros meses de projeto. Como principais etapas, destacam-se 1) a
                     construção da base corporativa de dados pela organização dos dados
@@ -876,14 +890,16 @@
                     integração das bases e sistemas já existentes via conversão de dados
                     espaciais.
                 </p>
-                <p>Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
+                <p>
+                    Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
                     compatíveis com as diretrizes nacionais de dados espaciais e ainda
                     tecnologias GEOSERVER / OpenLayers para a construção da Infraestrutura
                     de Dados Espaciais, além do portal demapas. Trata-se do primeiro projeto de
                     geoprocessamento na Prefeitura de São Paulo a usar tecnologia de software
                     livre.
                 </p>
-                <p>Dentre os requisitos técnicos de implantação, vale destacar a definição de
+                <p>
+                    Dentre os requisitos técnicos de implantação, vale destacar a definição de
                     padrões de intercâmbio de dados geográficos, compatível com a Open
                     Geospatial Consortium – OGC, concretizando uma visão voltada para a
                     transparência, compartilhamento que garanta a operabilidade e o efetivo uso

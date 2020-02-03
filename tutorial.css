@@ -13,6 +13,8 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* tabelas em geral */
+
 table{
     text-align: center;
 }
@@ -21,10 +23,36 @@ table, th, td{
     border: 1px solid black;
 }
 
+/* tabelas específicas */
+
 #tabelaDatum {
     width: 30%;
 }
 
 #WMSeWFS{
     width: 60%;
+}
+
+#extensoes{
+    text-align: left;
+}
+
+#extensoes th{
+    padding: 5px;
+}
+
+#extensoes td{
+    padding: 5px;
+}
+
+#glossario{
+    text-align: left;
+}
+
+#glossario th{
+    padding: 5px;
+}
+
+#glossario td{
+    padding: 5px;
 }

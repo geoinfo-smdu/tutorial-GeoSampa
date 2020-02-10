@@ -2,6 +2,42 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* barra de navegação lateral vertical*/
+#navbar{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    background-color: rgb(60, 60, 60);
+    padding: 10px;
+    color: white;
+    
+}
+
+#navbar_sub, #navbar_sub_sub {
+    list-style-type: none;
+    font-size: small;
+    padding-left: 20px;
+}
+
+#navbar li a{
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+#navbar li a:hover{
+    background-color: gray;
+    color: black;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
 h2 {
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;

@@ -3,37 +3,46 @@
     <head>
         <meta charset="utf8">
         <link rel="stylesheet" type="text/css" href="tutorial.css">
-        <title> Tutorial GeoSampa - introdução</title>
+        <title> Tutorial GeoSampa - web services</title>
     </head>
 
     <body>
-        <h1>Ajuda</h1>
+        <h1>Introdução</h1>
 
-        <h2>Versão do navegador</h2>        
-        <p> Verifique se seu navegador atende os requisitos da página inicial:
-
-            Esta aplicação é compatível com os browsers Google Chrome, Firefox, Internet Explorer e Safari.
-            <br><br>
-            Recomenda-se o uso das seguintes versões:
-            <br>
-            Internet Explorer: 9 ou superior. <br>
-            Safari: 5 ou superior. <br>
-            Google Chrome: 34 ou superior. <br>
-            Firefox: 28 ou superior. <br>
-            Microsoft Edge: versão 25 ou superior.
-            
-            <br> <br>
-            Você poderá consultar essa orientação sempre que quiser clicando no botão 
-            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide4_1_botaointerrogacao.jpg">.
+        <h2>Web Map Services (WMS) e Web Feature Services (WFS)</h2>        
+        
+        <p>
+            O GeoSampa permite acesso ao serviço de mapa pela Internet, o chamado Web Service. Esse protocolo possibilita a disponibilização
+            dos mapas num formato portável <!-- não seria portátil? --> e multi-plataforma para armazenamento num repositório ou para transferência entre
+            aplicações. Isso significa que os mapas do GeoSampa podem ser acessados por softwares como o QGIS, de forma “on line”, sem a necessidade de
+            baixar os arquivos.
         </p>
         <p>
-            Os computadores que possuem a versão antiga do navegador Internet Explorer não são compatíveis com o site.
-            Caso não seja possível atualizar, recomendamos a instalação de outro navegador, nas versões indicadas.
+            O Web Map Services (WMS) permite visualizar as camadas do GeoSampa com o mesmo estilo do site, sem que se possa modificá-los.
+            É no WMS que estão as fotos áereas da cidade, além das camadas vetoriais normais.
         </p>
         <p>
-            Verifique se seu bloqueador de “pop-up” está desativado. Caso contrário, alguns downloads podem ser bloqueados.
-            Alguns erros podem ser removidos limpando o cache do seu navegador. Para isso, basta acionar o atalho Ctrl + Alt + Del.
+            O Web Feature Services (WFS) permite visualizar as camadas do GeoSampa e modificar seu estilo. Todas as camadas vetoriais prsentes
+            no WMS também estão presentes no WFS.
         </p>
+
+        <table id="WMSeWFS">
+            <tr>
+                <th>Tipo do serviço</th>                        <th>Link</th>
+                <!-- links sem formatação de link pra poder copiar no QGIS, e não clicar pra abrir-->
+            </tr>
+            <tr>
+                <td>WMS - Camadas</td>      <td>http://wms.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+            </tr>
+            <tr>
+                <td>WMS - Mapas Base</td>   <td>http://raster.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wms</td>
+            </tr>
+            <tr>
+                <td>WFS - Camadas</td>      <td>http://wfs.geosampa.prefeitura.sp.gov.br/geoserver/geoportal/wfs</td>
+            </tr>
+                
+        </table>
+
     </body>
 
 </html>

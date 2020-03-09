@@ -110,6 +110,7 @@
             </p>
 
         <h2 id="0_2_3_6_download">Download de arquivos do GeoSampa</h2>
+            
             <p>
                 Todo o conteúdo do GeoSampa está disponível para download. Para baixar os arquivos, clique em
                 <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/0_2_3_2_1_botao_download.jpg" 
@@ -124,55 +125,62 @@
 
             </p>
             <p>
-                Nos casos de arquivos georreferenciados, você poderá escolher a extensão do arquivo de
-                interesse (.shp, .kmz ou .dxf). <b>Recomendamos fortemente o uso do sistema de projeção cartográfica SIRGAS 2000, código EPSG 
-                31983, conforme os padrões determinados para o Brasil.</b>
-            </p>
-            
-            <p>
                 Também podem ser baixados arquivos em formatos diversos pelo botão <a href="3_1_pesquisa.html">"Pesquisar"</a>.
-            </p>
-            <p>
-                Alguns arquivos podem estar divididos por distritos (edificações, por exemplo) devido ao grande volume de dados.
             </p>
             <p>
                 Lembre-se de verificar o local que serão armazenados os arquivos obtidos pelo download nas configurações de seu navegador.
             </p>
-            <p>
-                Alguns deles estão disponíveis em mais de um formato. São eles:
-            </p>
+
+            <h3>Formatos dos arquivos</h3>
+                <p>
+                    Alguns arquivos podem estar divididos por distritos (edificações, por exemplo) devido ao grande volume de dados.
+                </p>
+                
+                <p>
+                    Alguns deles estão disponíveis em mais de um formato. São eles:
+                </p>
+                
+                <!-- na tabela falar o que é cada um, por cima, e daí sim falar quais tão disponíveis nesse formato? -->
+                
+                <table id="extensoes">
+                    <tr>
+                        <td>PDF</td>            <td><b>Portable Document Format:</b> arquivo para visualização, contendo o mapeamento 
+                            planialtimétrico do MDC</td>
+                    </tr>
+                    <tr>
+                        <td>DXF</td>           <td><b>Drawing Exchange Format:</b> arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. 
+                            Os arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano (SCM), representadas como quadrículas no mapa</td>
+                    </tr>
+                    <tr>
+                        <td>DXF/MDT</td>           <td>arquivo em formato CAD, contendo o modelo digital do terreno, ou seja, altimetria do MDC 
+                            representada por nuvemde pontos 3D</td>
+                    </tr>
+                    <tr>
+                        <td>SHP</td>           <td><b>Shapefile</b></td>
+                    </tr>
+                    <tr>
+                        <td>KMZ</td>           <td><b>Keyhole Markup Zipped</b></td>
+                    </tr>
+                    <tr>
+                        <td>XLS/CSV</td>           <td>planilhas de dados e séries históricas</td>
+                    </tr>
+                </table>
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_2_janela_download_camadas.jpg" 
+                alt="Janela de download de camadas">
+                <br>
+                <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_3_janela_download_camada_distrito.jpg" 
+                alt="Janela de download de camadas, selecionando 'Distritos', do grupo 'Limites Administrativos'">
+
+            <h3>Sistemas de projeção</h3>
+                <p>
+                    Nos casos de arquivos georreferenciados, você poderá escolher a extensão do arquivo de
+                    interesse (.shp, .kmz ou .dxf). <b>Recomendamos fortemente o uso do sistema de projeção cartográfica SIRGAS 2000, código EPSG 
+                    31983, conforme os padrões determinados para o Brasil.</b>
+                </p>
             
-            <!-- na tabela falar o que é cada um, por cima, e daí sim falar quais tão disponíveis nesse formato? -->
             
-            <table id="extensoes">
-                <tr>
-                    <td>PDF</td>            <td><b>Portable Document Format:</b> arquivo para visualização, contendo o mapeamento 
-                        planialtimétrico do MDC</td>
-                </tr>
-                <tr>
-                    <td>DXF</td>           <td><b>Drawing Exchange Format:</b> arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. 
-                        Os arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano (SCM), representadas como quadrículas no mapa</td>
-                </tr>
-                <tr>
-                    <td>DXF/MDT</td>           <td>arquivo em formato CAD, contendo o modelo digital do terreno, ou seja, altimetria do MDC 
-                        representada por nuvemde pontos 3D</td>
-                </tr>
-                <tr>
-                    <td>SHP</td>           <td><b>Shapefile</b></td>
-                </tr>
-                <tr>
-                    <td>KMZ</td>           <td><b>Keyhole Markup Zipped</b></td>
-                </tr>
-                <tr>
-                    <td>XLS/CSV</td>           <td>planilhas de dados e séries históricas</td>
-                </tr>
-            </table>
-            <br>
-            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_2_janela_download_camadas.jpg" 
-            alt="Janela de download de camadas">
-            <br>
-            <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/slide38_3_janela_download_camada_distrito.jpg" 
-            alt="Janela de download de camadas, selecionando 'Distritos', do grupo 'Limites Administrativos'">
+            
 
         <h2 id="0_3_webserv">Web Map Services (WMS) e Web Feature Services (WFS)</h2>        
         
@@ -601,10 +609,10 @@
                     pesquisa e download de imagens/MDC">
                 </p>
 
-                <h4 id="3_5_3_1_MDT">Como usar os arquivos do Modelo Digital de Terreno - MDT</h4>
+                <h4 id="3_5_3_1_MDT">Como usar os arquivos dos modelos digitais de terreno e superfície (MDT e MDS)</h4>
                     <p>
-                        Há uma série de programas livres ou pagos específicos para visualização e processamento de dados de sensores 
-                        LASER/LiDAR em formato LAZ.Este é um formato padrão para arquivos laser. Este arquivo é uma "nuvem" com 
+                        Há uma série de programas livres ou pagos específicos para visualização e processamento dos dados de sensores 
+                        LASER/LiDAR em formato LAZ. Este é um formato padrão para arquivos laser. Este arquivo é uma "nuvem" com 
                         dezenas de milhares de pontos (com coordenadas de posição x,y,z e alguns outros atributos) 
                         em um formato compactado que pode ser descompactado e transformado em outros formatos através do laszip.exe 
                         (um software de uso livre).
@@ -774,6 +782,65 @@
                 </p>
         
         <h1 id="4_glossario">Glossário</h1>
+            <table id="glossario">
+                <tr>
+                    <td>MDC</td>               <td>Mapa Digital da Cidade</td>
+                </tr>
+                <tr>
+                    <td>RMSP</td>               <td>Região Metropolitana de São Paulo</td>
+                </tr>
+                <tr>
+                    <td>UTM</td>               <td>Sistema de coordenadas cartesianas - Universal Transversa de Mercator</td>
+                </tr>
+                <tr>
+                    <td>UBS</td>               <td>Unidade Básica de Saúde</td>
+                </tr>
+                <tr>
+                    <td>IPVS</td>               <td>Índice Paulista de Vulnerabilidade Social</td>
+                </tr>
+                <tr>
+                    <td>PDE</td>               <td>Plano Diretor Estratégico</td>
+                </tr>
+                <tr>
+                    <td>ZEIS</td>               <td>Zona Especial de Interesse Social</td>
+                </tr>
+                <tr>
+                    <td>EDIFICAÇÃO</td>               <td>Obra coberta destinada a abrigar atividade humana ou qualquer instalação, equipamento e 
+                        material. (Lei nº 16.642/2017 - Código de Obras)</td>
+                </tr>
+                <tr>
+                    <td>IMÓVEL</td>               <td>O lote, público ou privado, edificado, ou não, assim definido:
+                        <ol type="A">
+                            <li>imóvel edificado: aquele ocupado total ou parcialmente com edificação permanente;</li>
+                            <li>imóvel não-edificado: aquele não ocupado ou ocupado com edificação transitória, em que não se exerçam 
+                                atividades nos termos da legislação de uso e ocupação do solo. LOGRADOURO-Passeio público. 
+                                <!-- conferir essa parte de 'LOGRADOURO'-->
+                            </li>
+                        </ol>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>LOTE</td>               <td>A parcela de terreno resultante de loteamento, desmembramento ou desdobro, contida em uma 
+                        quadra com, pelo menos, uma divisa lindeira a via de circulação oficial.
+                    </td>
+                </tr>
+                <tr>
+                    <td>LOTEAMENTO</td>               <td>É a subdivisão de glebas em lotes destinados à edificação, com aberturas de novas vias de
+                        circulação, de logradouros públicos ou prolongamento, modificação ou ampliação das vias já existentes. 
+                        O loteamento é precedido de diretrizes para fixação das áreas verdes, institucionais e sistema viários públicos 
+                        e eventuais faixas não edificáveis (SEHAB).</td>
+                </tr>
+                <tr>
+                    <td>LPUOS</td>               <td>Legislação <!-- Poderia escrever 'Lei' ao invés de 'Legislação'--> de Parcelamento, Uso e 
+                        Ocupação do Solo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>NON AEDIFICANDI</td>               <td>Supressão de vegetação localizada em área de preservação permanente. 
+                        Lote onde não pode haver nenhum tipo de assentamento urbano, restrito a áreas de conservação ambiental, próximo a 
+                        represas, etc.</td>
+                </tr>
+            </table>
 
         <h1 id="5_sobre">Sobre o GeoSampa</h1>
         <h2>Histórico</h2>

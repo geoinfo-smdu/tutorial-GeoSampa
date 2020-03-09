@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* barra de navegação lateral vertical*/
 #navbar{
     font-size: larger;

@@ -1,0 +1,21 @@
+html, body{
+    height: 100%;
+   }
+  
+   .accordion-item, .accordion-item:focus, .accordion-item:active,
+   .accordion-header, .accordion-header:focus, .accordion-header:active,
+   .accordion-button, .accordion-button:focus, .accordion-button:active,
+   .accordion-body {
+       outline: none !important;
+       background:#f8f9fa;
+       border:none;
+       box-shadow:none;
+       padding: 0ch;
+   }
+   .accordion-body {
+       padding-left: 7ch;
+   }
+   .accordion-header{
+       padding-left: 2.5ch;
+   }
+   

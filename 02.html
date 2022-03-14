@@ -10,6 +10,7 @@
     <meta name="author" content="geoinfo">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
+    <script src="Js.js"></script> 
     <title>Tutorial Geosampa</title>
 
 </head>
@@ -38,11 +39,15 @@
 
                 <li class="nav-item dropdown ms-md-5">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">Consultas</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#item4-1">Informações do Lote</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-2">Licenciamento - sistema SLCe</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-3">Zoneamento - SIZON</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-4">IPTU</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-1">Download de croquis e plantas</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-2">Marco Geodésico</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-3">Download de Imagens e MDC</a></li>
                     </ul>
                 </li>
 
@@ -72,7 +77,7 @@
 
         <div class="col-2 col-xs-1 pt-3 position-fixed h-100">
 
-            <nav id="navbar-progress" class="navbar navbar-expand-sm navbar-light bg-light flex-column align-items-stretch p-3 h-100">
+            <nav id="navbar-progress" class="navbar navbar-nav-scroll navbar-light bg-light flex-column align-items-stretch p-1 h-100">
                 
                 <!-- 
                     tentativa de tornar colápsvel
@@ -102,39 +107,38 @@
                             <a class="nav-link ms-3" href="#item4-2">Pesquisa</a>
                             
                             <nav class="nav nav-pills flex-column">
-
                                 <div class="accordion" id="accordion1">
                                     <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
+                                        <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <a class="nav-link" href="#item4-2-1">Por SQL</a>
+                                        <a class="nav-link" href="#item4-2-1">Por SQL</a>
                                         </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-1"> Setor-Quadra</a></div>
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-2">Licenciamento <br>Sistema SLCe</a></div>
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-3">SISZON-zoneamento</a></div>
-                                    </div>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-1"> Setor-Quadra</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-2">Licenciamento <br>Sistema SLCe</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-3">SISZON-zoneamento</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-4">Consulta ao IPTU</a></div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <a class="nav-link ms-5 href="#item4-2-2">Por endereço</a>
+                                <a class="nav-link ms-5" href="#item4-2-2">Por endereço</a>
 
                                 <div class="accordion" id="accordion2">
                                     <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
+                                        <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button  ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                             <a class="nav-link" href=#item4-2-3>Outras Consultas</a>
                                         </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-1">Download<br>Croquis e Plantas</a></div>
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-2">Marco Geodésico</a></div>
-                                        <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-3">Download Imagem/MDC</a></div>
-                                    </div>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-1">Download<br>Croquis e Plantas</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-2">Marco Geodésico</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-3">Download Imagem/MDC</a></div>
+                                        </div>
                                     </div>
                                 </div>
-                
                             </nav>
                             
 
@@ -146,8 +150,6 @@
                         <a class="nav-link" href="#item-5">Glossário de Siglas</a>
 
                     </nav>
-                
-                <!--</div>-->
             </nav>
 
         </div>
@@ -157,14 +159,7 @@
                          
             <h2 id="item-1">Orientações Gerais</h2>
 
-                <ul>
-                    <li><a href="#item1-1">Configurando o Ambiente - Navegadores compatíveis, sistemas de referência cartográfica dinoponíveis e acesso aos dados online</a></li>
-                    <li><a href="#item1-2">Dados Abertos - Como fazer download e formatos diponíveis</a></li>
-                    <li><a href="#item1-3">Como acessar Metadados</a></li>
-                    <li><a href="#item1-4">Como acessar este tutorial pelo site do Geosampa</a></li>
-                </ul> 
-
-                <hr class="hidden">
+                <hr class="hr-hidden">
 
                 
                 <h3 id="item1-1">Configurando o Ambiente</h3>
@@ -277,7 +272,7 @@
 
                 <p>&nbsp;</p>
 
-                <h2 id="item1-2">Dados abertos</h2>
+                <h3 id="item1-2">Dados abertos</h3>
 
                     <p>O conteúdo do GeoSampa está disponível para download além dos
                         mapas articulados. Para fazer o download, clique na imagem mostrada ao lado e escolha o
@@ -327,7 +322,7 @@
                 <p>&nbsp;</p>
 
 
-                <h2 id="item1-3">Acessar Metadados</h2>
+                <h3 id="item1-3">Acessar Metadados</h3>
 
                     <p>Os metadados são as informações sobre cada uma das camadas, com o objetivo de proporcionar a correta utilização e interpretação dos
                         dados.</p>
@@ -342,7 +337,7 @@
                 
                     <p>&nbsp;</p>
 
-                <h2 id="item1-4">Acessar Tutorial pelo Geosampa</h2>
+                <h3 id="item1-4">Acessar Tutorial pelo Geosampa</h3>
 
                     <p>Acesse o tutorial do Geosampa ao clicar no botão superior à direita, conforme indicado na figura a baixo.</p>
 
@@ -513,13 +508,18 @@
                             <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado</p>  <img src="/images/4_2_1_3-siszon-visualizar-impressao.jpg" alt="imagem ao clicar visualizar impressão">
                             <p>Para saber mais informações sobre o zoneamento, observe a caixa <strong>“Mensagem” </strong> e vá no link <strong>“clique aqui”</strong>. </p>  <img src="" alt="imagem com página extra">
 
+                        <h5 id="item4-2-1-4">Consulta ao IPTU</h5>
+
+
+
+
                     <h4 id="item4-2-2">Por endereço</h4>
                             
                 <h3 id="item4-2-3">Outras consultas disponíveis</h3>
 
                 <!--Revisar instruções e adicionar ID -->
                     
-                    <h4>Download de croquis e plantas</h4>
+                    <h4 id="item4-2-3-1">Download de croquis e plantas</h4>
                         
                         <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Área Pública/Planta".
                             Então escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
@@ -538,7 +538,7 @@
                                         Terceiro, se, área cedida: grupo Cadastro, subgrupo Área Pública, Área Cedida.
                                         Quarto, se, Localizar Plantas DIS,DUP: grupo Legislação Urbana, subgrupo Bens Protegidos, Utilidades Públicas e Interesse ">
 
-                    <h4>Marco Geodésico</h4>
+                    <h4 id="item4-2-3-2" >Marco Geodésico</h4>
 
                         <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Marco Geodésico".</p>
                         
@@ -557,7 +557,7 @@
                     
                         <img src="" alt="imagem motrando o resultado do Marco Geodésico">
 
-                    <h4>Download de imagens/MDC</h4>
+                    <h4 id="item4-2-3-3" >Download de imagens/MDC</h4>
 
                         <p> Para realizar o download você precisará, no MENU pesquisa <img src="" alt="imagem lupa">, ativar a aba: "Download de Imagens/MDC".</p>
 

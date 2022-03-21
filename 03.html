@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="São Paulo, dados abertos, como usar geosampa">
+    <meta name="author" content="geoinfo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+    <script src="Js.js"></script> 
+    <title>Tutorial Geosampa</title>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-progress" data-bs-offset="50" > 
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" hight="100%">
+        <div class="container-fluid" >
+
+            <a class="navbar-brand me-md-5" href="#">Tutorial <strong>Geosampa</strong> </a>
+
+            <!-- 
+                esse é o botão reponsivo que surge com a redução da tela da tela. no códico está apenas para o menu superior.
+                
+                abaixo uma tentativa de apontar para as duas navbars
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent, #navbar-progress" aria-controls="navbarSupportedContent, navbar-progress" aria-expanded="false" aria-label="Toggle navigation" style="align-items: center;" >
+            -->  
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="align-items: center;" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+
+                <li class="nav-item dropdown ms-md-5">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">Consultas</a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#item4-1">Informações do Lote - SQL</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h5 class="dropdown-header">Baseadas em SQL</h5></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-2">Licenciamento - sistema SLCe</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-3">Zoneamento - SIZON</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-1-4">IPTU</a></li>
+                        <li><h5 class="dropdown-header">Outras consultas</h5></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-1">Download de croquis e plantas</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-2">Marco Geodésico</a></li>
+                        <li><a class="dropdown-item" href="#item4-2-3-3">Download de Imagens e MDC</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre o Geosampa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mapa do Site</a>
+                </li>
+
+                </ul>
+                <form class="d-flex">
+                    
+                <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Busca" >
+                <button class="btn btn-outline-success" type="submit" style="color:aliceblue;border-color:aliceblue">Pesquisa</button>
+                <!--substituir palavra por imagem de lupa-->
+                </form>
+            </div>
+        </div>
+      </nav>
+      
+      
+
+<div class="container-fluid" >
+    <div class="row mt-5">
+
+        <div class="col-2 col-xs-1 pt-3 position-fixed h-100 bg-light">
+
+            <nav id="navbar-progress" class="navbar navbar-nav-scroll navbar-light bg-light flex-column align-items-stretch p-1" higth="100%">
+                
+                <!-- 
+                    tentativa de tornar colápsvel
+                    <div class="collapse navbar-collapse navbar" >
+                -->
+
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Orientações Gerais</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item1-1">Configurando o ambiente</a>
+                            <a class="nav-link ms-3" href="#item1-2">Dados Abertos</a>
+                            <a class="nav-link ms-3" href="#item1-3">Metadados</a>
+                        </nav>
+
+                        <a class="nav-link" href="#item-2">Cursor</a>
+
+                        <a class="nav-link" href="#item-3">Menu Camadas</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item3-1">Informações Sobre Camadas</a>
+                        </nav>
+
+                        <a class="nav-link" href="#item-4">Menu de Ferramentas</a>
+
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item4-1">Informações</a>
+
+                            <a class="nav-link ms-3" href="#item4-2">Pesquisa</a>
+                            
+                            <nav class="nav nav-pills flex-column">
+                                <div class="accordion" id="accordion1">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <a class="nav-link" href="#item4-2-1">Por SQL</a>
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-1"> Setor-Quadra</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-2">Licenciamento <br>Sistema SLCe</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-3">SISZON-zoneamento</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-1-4">Consulta ao IPTU</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="nav-link ms-5" href="#item4-2-2">Por endereço</a>
+
+                                <div class="accordion" id="accordion2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button  ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <a class="nav-link" href=#item4-2-3>Outras Consultas</a>
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-1">Download<br>Croquis e Plantas</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-2">Marco Geodésico</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#item4-2-3-3">Download Imagem/MDC</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            
+
+                            <a class="nav-link ms-3" href="#item4-3">Desenho e Medições</a>
+
+                            <a class="nav-link ms-3" href="#item4-4">MDT</a>
+                        </nav>
+
+                        <a class="nav-link" href="#item-5">Glossário de Siglas</a>
+
+                    </nav>
+            </nav>
+
+        </div>
+
+        <div class="col-8 col-xs-10 pt-4 offset-2 px-4">
+            <h2>Saiba mais sobre o Geosampa</h2>
+                <h3>Histórico</h3>
+                    <p> O MDC é o suporte cartográfico do Sistema de Informações
+                        Geográficas do Município de São Paulo (SIG-SP), regulamentado pelo
+                        Decreto 57.770, de 3 de julho de 2017.
+                        O Mapa Digital da Cidade (MDC), é uma base cartográfica digital
+                        cadastral nas escalas 1:1.000, na área urbana, e 1:5.000, na área rural
+                        do Município de São Paulo, resultado de levantamento
+                        aerofotogramétrico realizado no ano de 2004, com recursos do
+                        Programa de Modernização da Administração Tributária (PMAT), do
+                        Banco Nacional do Desenvolvimento (BNDES).
+                        A construção do MDC incluiu a implantação da Rede Básica de
+                        Referência Geodésica do Município de São Paulo, com 302 marcos,
+                        cobertura aerofotogramétrica colorida com cerca de 12 mil fotos, apoio
+                        de campo planialtimétrico, aerotriangulação, restituição digital, modelo
+                        digital do terreno, reambulação, edição, preparação de arquivos para
+                        uso em sistema de informações geográficas, elaboração de mais de
+                        quatro mil ortofotos digitais, construção de base de dados cadastrais de
+                        imóveis e logradouros, entre outros produtos e serviços.
+                        Esses trabalhos permitiram a modernização do sistema cartográfico
+                        municipal, que já em 1978 foi digitalizado em um sistema pioneiro
+                        denominado Geocodificação de Logradouros – GEOLOG. Os desafios
+                        da atualização e disseminação desses dados demandam permanente
+                        evolução tecnológica e organizacional.
+                        Em 2017, foi realizado um aerolevantamento que produziu além de
+                        ortofotos e mapeamento detalhado da vegetação, a cobertura de toda a
+                        cidade por dados laser/ lidar.
+                    </p>
+                <h3>O GeoSampa</h3>
+                    <p>O resultado dessas atividades pode ser usado no portal GeoSampa,
+                        disponível desde dezembro/2014.
+                        A partir do mapa também é possível realizar download de arquivos
+                        georreferenciados, mapas, plantas, croquis, imagens de satélite, fotos
+                        aéreas e ortofotos.
+                        Atualmente, são disponibilizadas mais de 200 camadas temáticas com
+                        informações cadastrais (310 setores, 55.000 quadras e 2,5 milhões de
+                        lotes fiscais), a localização de cada uma das cerca de 650.000 árvores
+                        do sistema viário, os perímetros do zoneamento da Cidade, a
+                        localização dos equipamentos públicos nas áreas de educação,
+                        saúde, assistência social, cultura, esportes e lazer, a localização e situação das 400 áreas de risco do município. Arquivos
+                        em formatos .shp, .kmz, .dxf, .pdf e .jpg também podem ser baixados
+                        contendo tanto as informações vetoriais do mapa como fotos, ortofotos
+                        e cartas. Para o servidor, o sistema tem permitido a redução do tempo de
+                        resposta a processos administrativos pelo acesso único e simplificado
+                        aos dados. Para o público externo tais como órgãos públicos estaduais
+                        e federais, estudantes, empresas, conselhos gestores, organizações
+                        não governamentais, comunidades digitais e moradores, viabiliza-se o
+                        acesso e a transparência das informações públicas. O acesso a um
+                        único portal para consulta e aquisição de arquivos geoespaciais em
+                        formato aberto permite assim, o acompanhamento dos dados de
+                        múltiplos temas em uma única aplicação. 
+                    </p>
+                <h3>Projeto SIG-SP</h3>
+                    <p>O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
+                        divulgação de informações mapeadas como subsídios para o planejamento,
+                        implementação e gestão de políticas públicas nas áreas de atuação do governo
+                        municipal, priorizando o atendimento ao cidadão. O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
+                        procedimentos organizacionais, dados, programas e equipamentos computacionais,
+                        abrangendo os dados sociais, culturais, econômicos, financeiros, patrimoniais,
+                        urbanísticos, administrativos, físico-territoriais, ambientais, geológicos, geográficos,
+                        cartográficos e outros de interesse do Município, sendo, essencialmente, um sistema
+                        aberto, dinâmico e permanente, em constante adequação à realidade urbana.
+                        Nesses termos e diante do grande volume de informações disponíveis na
+                        administração municipal, a Prefeitura de São Paulo optou pela adoção de uma visão
+                        integradora. Ao invés da construção de um novo sistema ou mesmo da migração de
+                        todos os dados para uma base única, optou-se pela criação de um ambiente
+                        compartilhado que integre dados geográficos de referência (distritos, quadras fiscais,
+                        cartografia, por exemplo) aos sistemas de informações já existentes, permitindo a
+                        visualização das informações oriundas destes diretamente no mapa. A
+                        disponibilização de um volume de informações de aproximadamente 10 terabytes a
+                        uma grande quantidade de usuários representa um desafio, principalmente, se
+                        consideradas as questões como integridade e segurança dos dados.
+                        O projeto de construção do SIG-SP vem sendo implantado passo a passo, de
+                        modo a permitir a disponibilização de ferramentas aos usuários já nos
+                        primeiros meses de projeto. Como principais etapas, destacam-se 1) a
+                        construção da base corporativa de dados pela organização dos dados
+                        cartográficos (Mapa Digital da Cidade), cadastrais (setor, quadra, lotes,
+                        logradouros) e temáticos; 2) a implantação de um sistema de infra-estrutura
+                        dos dados municipais; 3) elaboração do catálogo de metadados e 4) a
+                        integração das bases e sistemas já existentes via conversão de dados
+                        espaciais.
+                        Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
+                        compatíveis com as diretrizes nacionais de dados espaciais e ainda
+                        tecnologias GEOSERVER / OpenLayers para a construção da Infraestrutura
+                        de Dados Espaciais, além do portal de mapas. Trata-se do primeiro projeto de
+                        geoprocessamento na Prefeitura de São Paulo a usar tecnologia de software
+                        livre. 
+                        Dentre os requisitos técnicos de implantação, vale destacar a definição de
+                        padrões de intercâmbio de dados geográficos, compatível com a Open
+                        Geospatial Consortium – OGC, concretizando uma visão voltada para a
+                        transparência, compartilhamento que garanta a operabilidade e o efetivo uso
+                        das informações geoespaciais.
+                    </p>
+        </div>
+
+</body>
+</html>
+
+

@@ -25,6 +25,23 @@
         padding: 8px;
         }
 
+                * {
+        box-sizing: border-box;
+        }
+
+        
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; 
+        }
+
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
     </style>
 </head>
 
@@ -720,8 +737,7 @@
                             alt="Imagem indicando lote selecionado e janela com as informações referentes a ele, bom como atributos específicos para condomínios. As informações que aparecem são: setor, 
                                 tipo de quadra, quadra, condomínio, tipo de lote, lote, dígito SQL, CodLog, Nome do logradouro, múmero da porta, 
                                 complemento, situação, uso, área do terreno e área construída.">
-
-
+                                
                 <h3 id="item4-2">Pesquisa</h3>
                     <h4 id="item4-2-1">Por SQL</h4>
                         <h5 id="item4-2-1-1">Setor quadra</h5>
@@ -730,20 +746,24 @@
                                 preenchimento das lacunas .</p>
                             <img class="img-fluid mx-auto p-5" src="images/4_2_1_1-setor-quadra.jpg" alt="imagem de setor-quadra" hight="576px" width="1021px">
 
+                            
+                                
                         <h5 id="item4-2-1-2">Licenciamento - sistema SLCe</h5>
                             <p>O Sistema de Licenciamento Eletrônico de Construção é gerenciado pela Secretaria Municipal de Licenciamento e compila os seguintes processos:</p>
-                                <strong>I- Licenciamento de edificação nova ou reforma para os seguintes usos:</strong> <br>
-                                    <p> Residências unifamiliares; <br> Casas geminadas; <br> Casas sobrepostas; <br> 
-                                      Usos não residenciais até 1.500 m² de área construída;<br></p> 
-                                    
-                                <strong> II– Pedidos de licenças complementares tais como:</strong><br>
-                                        
-                                    <p> Estande de vendas;  <br>                Certificado de conclusão;<br>
-                                            Grua;      <br>                         Troca de responsabilidade técnica;<br>
-                                            Tapume;    <br>                         Comunicação de obras de emergência;<br>
-                                            Desdobro e remembramento de lote; <br>  Outras comunicações; <br> 
-                                            Alvarás de demolição;<br></p>
-
+                            <div class="row">
+                                <div class="column">
+                                  <h6> I- Licenciamento de edificação nova ou reforma para os seguintes usos:</h6>
+                                  <p> Residências unifamiliares; <br>Casas geminadas; <br>Casas sobrepostas;<br> Usos não residenciais até 1.500 m² de área construída;</p>
+                                </div>
+                                <div class="column" >
+                                  <h6>II– Pedidos de licenças complementares tais como:</h6>
+                                  <p>
+                                  Estande de vendas;  <br> Certificado de conclusão;<br> Grua; <br> Troca de responsabilidade técnica;<br>
+                                  Tapume; <br> Comunicação de obras de emergência;<br> Desdobro e remembramento de lote; <br>  Outras 		comunicações; <br> Alvarás de demolição;<br>
+                                  </p>
+                                </div>
+                              </div>
+                               
                             <p> <strong>Passo a passo:</strong>
                                 <ol class="list-group list-group-numbered p-3 my-3">
                                     <li class="list-group-item">Primeiro, à esquerda, localize a ferramenta “Pesquisar”, selecione a aba ”Licenciamento” e preencha as informações de setor, quadra e lote, depois clique em “Listar”.</li>
@@ -922,8 +942,8 @@
                 <h3 id="item4-4">MDT (Modelo Digital do Terreno</h3>
                     <p>Os arquivos estão em formato LAZ (LAS compactado) e podem ser usados para inúmeras aplicações com auxílio de diversos software. Com esses dados, por exemplo, a cratera e a cachoeira na zona sul 
                     da cidade ficam evidentes em imagens a baixo:</p>
-                    <img src="images/4_4-ex-mdt.jpg" alt="exemplo de mdt" height="400px" width="400px">
-                    <img src="images/4_4-ex2-mdt.jpg" alt="segunda parte do exemplo" height="500px" width="500px">
+                    <img class="img-fluid mx-auto p-5" src="images/4_4-ex-mdt.jpg" alt="exemplo de mdt" height="400px" width="400px">
+                    <img class="img-fluid mx-auto p-5" src="images/4_4-ex2-mdt.jpg" alt="segunda parte do exemplo" height="500px" width="500px">
                             
                     <p> Para acessar as bases MDT clique no ícone  <img src="images/4_4-mdt.jpg" alt="ícone MDT"> LiDAR 3D. Na área de interesse, clique e arraste para selecionar as páginas. </p>
                     <img class="img-fluid mx-auto p-5" src="images/310_2_guiaLIDAR.gif" alt="gif de como acessar o MDT" hight="576px" width="1021px">
@@ -932,7 +952,7 @@
         <table>
                         
                 <tr>
-                   <th>Sigla ou Palavra-Chave(?) </th>
+                   <th>Sigla ou Palavra-Chave </th>
                    <th>Significados</th>
                 </tr>
                 <tr>
@@ -1003,7 +1023,6 @@
                         represas etc. </td>
                 </tr>
                 
-            
         </table>
     <p>&nbsp;</p>
             

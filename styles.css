@@ -19,14 +19,12 @@
     padding-left: 2.5ch;
 }
 
-.nav-pills .nav-link:active {
-    background-color: rgba(68, 68, 68, 0.2);
+.nav-pills a.nav-link.active {
+    background-color: rgba(103, 109, 126, 0.2);
+    border-radius: 0%;
+    color: #ffffff;
 }
 
-
-#navbar-progress{
-    height: 100%;
-}
 
 h2{
     margin-top: 3rem;

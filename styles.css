@@ -19,26 +19,34 @@
     padding-left: 2.5ch;
 }
 
-.navbar-nav-scroll{
-    overflow-x: hidden;
-    overflow-y: none;
+.nav-pills a.nav-link.active {
+    background-color: rgba(103, 109, 126, 0.2);
+    border-radius: 0%;
+    color: #ffffff;
 }
 
-#navbar-progress{
-    height: 100%;
+
+h2{
+    margin-top: 3rem;
 }
 
-.h2{
-    margin-top: 4ch;
-    margin-bottom: 2ch;
+hr{
+    margin-bottom: 3rem;;
 }
    
-.h3{
-    margin-top: 2ch;
-    margin-bottom: 1ch;
+h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
-.h4{
-    margin-top: 2ch;
-    margin-bottom: 1ch;
+h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
+
+h5{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+

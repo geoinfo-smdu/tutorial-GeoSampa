@@ -12,6 +12,13 @@
     box-shadow:none;
     padding: 0ch;
 }
+
+#accordion1.accordion-button::after , #accordion2.accordion-button::after {
+    order: -1; //swap order
+    margin-left: 0; 
+    margin-right:0.5em; // just extra space between text and icon
+}
+
 .accordion-body {
     padding-left: 7ch;
 }

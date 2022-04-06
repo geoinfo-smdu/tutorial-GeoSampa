@@ -2,28 +2,30 @@
     height: 100%;
    }
   
-.accordion-item, .accordion-item:focus, .accordion-item:active,
-.accordion-header, .accordion-header:focus, .accordion-header:active,
-.accordion-button, .accordion-button:focus, .accordion-button:active,
-.accordion-body {
+.accordion-item,  .accordion-item:focus, .accordion-item:active,
+.accordion-header, .accordion-header:focus,
+.accordion-button, .accordion-button:focus, 
+.accordion-body, .accordion-button:link, .accordion-button:visited, .accordion-button:hover{
     outline: none !important;
-    background:#f8f9fa;
+    background:#f8f9fa !important;
     border:none;
-    box-shadow:none;
+    box-shadow:none !important;
     padding: 0ch;
 }
 
-#accordion1.accordion-button::after , #accordion2.accordion-button::after {
-    order: -1; //swap order
+.accordion-button::after , .accordion-button::after {
+    order: -1; 
     margin-left: 0; 
-    margin-right:0.5em; // just extra space between text and icon
+    margin-right:0.65em;
 }
 
+
 .accordion-body {
-    padding-left: 7ch;
+    padding-left: 7.5ch;
 }
+
 .accordion-header{
-    padding-left: 2.5ch;
+    padding-left: 1.5ch;
 }
 
 table {
@@ -56,44 +58,55 @@ td, th {
     clear: both;
     }
 
-   
+ 
 img {
     height: auto;
     display: flex;
-    align-items: right;
-    justify-content: center;
-    border: 3px 
-    object-fit: cover;
+
     }
     
 .nav-pills a.nav-link.active {
-    background-color: rgba(103, 109, 126, 0.2);
+    background-color: rgba(137, 154, 201, 0.116);
     border-radius: 0%;
-    color: #ffffff;
+    color: #424344;
 }
 
+.nav-pills a.nav-link {
+    color: #797878;
+
+}
+
+#navbar-progress{
+    min-height: 100%;
+    background-color: #f8fafc;
+}
+
+h1{
+    margin-top: 7.5rem;
+}
 
 h2{
     margin-top: 3rem;
 }
 
 hr{
-    margin-bottom: 3rem;;
+    margin-bottom: 1rem;;
 }
    
 h3{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 5.5rem;
+    margin-bottom: 2.5rem;
+    color: #46637e;
 }
 
 h4{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h5{
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 

@@ -61,8 +61,6 @@ td, th {
  
 img {
     height: auto;
-    display: flex;
-
     }
     
 .nav-pills a.nav-link.active {
@@ -83,6 +81,7 @@ img {
 
 h1{
     margin-top: 7.5rem;
+    font-weight: 600;
 }
 
 h2{
@@ -95,18 +94,25 @@ hr{
    
 h3{
     margin-top: 5.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     color: #46637e;
+    font-weight: 600;
 }
 
 h4{
     margin-top: 4.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 350;
 }
 
 h5{
     margin-top: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+}
+
+p{
+    font-weight: 375;
 }
 
 

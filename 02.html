@@ -123,13 +123,21 @@
 
                             <a class="nav-link" href="#item-3"style="color: black;">Menu Camadas</a>
                             <nav class="nav nav-pills flex-column">
-                                <a class="nav-link my-1" href="#item3-1">Informações Sobre Camadas</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link my-1" href="#item3_1_mapa_base">Mapa Base</a>
+                                    <a class="nav-link my-1" href="#item3_2_camadas">Camadas</a>
+                                    <a class="nav-link my-1" href="#item3_3_infos_camadas">Informações Sobre Camadas</a>
+                                </nav>
                             </nav>
 
                             <a class="nav-link" href="#item-4"style="color: black;">Menu de Ferramentas</a>
 
                             <nav class="nav nav-pills flex-column">
-                                <a class="nav-link my-1" href="#item4-1">Informações</a>
+                                <a class="nav-link my-1" href="#item4-1">Informações do Lote</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ms-5" href="#item4_1_2_SQL">Setor-Quadra-Lote</a>
+                                    <a class="nav-link ms-5" href="#item4_1_3_infos_ficais">Informações fiscais</a>
+                                </nav>
 
                                 <a class="nav-link" href="#item4-2">Pesquisa</a>
                                 
@@ -170,7 +178,10 @@
                                 
 
                                 <a class="nav-link" href="#item4-3">Desenho e Medições</a>
-
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ms-5" href="#item4_3_1_medicoes">Medições</a>
+                                    <a class="nav-link ms-5"href="#item4_3_2_desenho">Desenho</a>
+                                </nav>
                                 <a class="nav-link" href="#item4-4">MDT</a>
                             </nav>
 
@@ -462,14 +473,14 @@
                     <hr>
 
                     <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/3-camadas.jpg"  style="display: flex;">
-
-                    <h3 id="item3-1"> Mapa Base</h3>
+                   
+                    <h3 id="item3_1_mapa_base"> Mapa Base</h3>
                         <p>Você pode escolher um dos mapas base disponíveis como plano de fundo, sendo possível alterá-lo a qualquer momento
                         durante sua navegação. Entretanto, é permitido visualizar apenas um por vez. Também pode-se deixar sem plano de fundo. </p>
 
                         <img class="img-fluid mx-auto p-2" src="images/3-mapa_base-camadas.jpg" style="display: flex;">
 
-                    <h3 id="item3-2">Camadas</h3>
+                    <h3 id="item3_2_camadas">Camadas</h3>
                         <p>Em <strong>camadas</strong>, está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.</p>
                         <p>As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão <strong>+</strong> e habilitar a camada de interesse.
                         Caso queira habilitar todas as camadas do grupo, poderá clicar apenas uma vez neste. Todas as camadas serão habilitadas automaticamente.</p>
@@ -477,7 +488,7 @@
                         imagem na página anterior.</p>
                         
 
-                    <h3 id="item3-3">Informações Sobre Camadas</h3>
+                    <h3 id="item3_3_infos_camadas">Informações Sobre Camadas</h3>
                         <p>Habilite, no menu à direita, as camadas das quais buscará mais informações. 
                         Lembre-se que as informações somente aparecerão para as camadas habilitadas no menu. A seguir, clique no botão <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/33_1_botao_informacao.png"> e após,
                         no elemento de interesse no mapa </p>
@@ -688,7 +699,9 @@
                     </div>
 
                     <h3 id="item4-1">Informações</h3>
-                        <h4 id="item4-1-1">SQL - Setor-Quadra-Lote</h4>
+
+
+                        <h4 id="item4_1_2_SQL">SQL - Setor-Quadra-Lote</h4>
 
                             <p>O código SQL (setor-quadra-lote) representa a identificação dos lotes
                             no Cadastro Imobiliário Fiscal da PMSP. Este código corresponde ao
@@ -703,7 +716,7 @@
                             Em seguida há uma parte do número composto por 4 dígitos que representam o código do lote. 
                             O último dígito que é após o traço é um dígito verificador.">
                             
-                            <h5>Informações fiscais do lote</h5>
+                            <h5 id="item4_1_3_infos_ficais">Informações fiscais do lote</h5>
 
                                 <p>O GeoSampa disponibiliza informações fiscais do lote, numa camada
                                     que é atualizada pela Secretaria da Fazenda. Essa camada substitui os
@@ -887,8 +900,7 @@
                     
                     <h3 id="item4-3">Desenho e Medições</h3>
 
-                    
-                        <h4 id="item4-3-1">Calcular distâncias, área e ângulos </h4>
+                        <h4 id="item4_3_1_medicoes">Calcular distâncias, área e ângulos </h4>
 
                             <p> Ao clicar no botão <img src="images/35_1_medicoes_menu.png" 
                                 alt="Imagem que mostra o botão de medições expandido, com ícone de distância, 
@@ -912,7 +924,7 @@
                                 O ângulo será dado somente em relação ao último e seguimento feito e o anterior a este. </p>       
                             <p>O resultado da medição não tem caráter documental nem precisão.</p>
 
-                        <h4 id="item4-3-2">Ferramenta de Desenho</h4>
+                        <h4 id="item4_3_2_desenho">Ferramenta de Desenho</h4>
                             
                             <p> Ao clicar na ferramenta de <strong>desenho</strong> <img src="images/39_1_desenho.png">, uma janela será habilitada.</p>
 

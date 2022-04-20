@@ -109,84 +109,80 @@
 
                 <nav id="navbar-progress" class="navbar navbar-nav-scroll mobile-offcanvas navbar-light flex-column align-items-stretch p-1">
                     
-                   
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#1_oritacoes_gerais" style="color: black;">Orientações Gerais</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link my-1" href="#1_1_config_ambiente">Configurando o ambiente</a>
+                            <a class="nav-link" href="#1_2_dados_abertos">Dados Abertos</a>
+                            <a class="nav-link" href="#1_3_metadados">Metadados</a>
+                        </nav>
+
+                        <a class="nav-link" href="#2_cursor" style="color: black;">Cursor</a>
+
+                        <a class="nav-link" href="#3_camadas"style="color: black;">Menu Camadas</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link my-1" href="#3_1_mapa_base">Mapa Base</a>
+                            <a class="nav-link my-1" href="#3_2_camadas">Camadas</a>
+                            <a class="nav-link my-1" href="#3_3_infos_camadas">Informações Sobre Camadas</a>
+                        </nav>
+
+                        <a class="nav-link" href="#4_ferramentas"style="color: black;">Menu de Ferramentas</a>
 
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#1_oritacoes_gerais" style="color: black;">Orientações Gerais</a>
+                            <a class="nav-link my-1" href="#4_1_infos">Informações do Lote</a>
                             <nav class="nav nav-pills flex-column">
-                                <a class="nav-link my-1" href="#1_1_config_ambiente">Configurando o ambiente</a>
-                                <a class="nav-link" href="#1_2_dados_abertos">Dados Abertos</a>
-                                <a class="nav-link" href="#1_3_metadados">Metadados</a>
+                                <a class="nav-link ms-5" href="#4_1_2_SQL">Setor-Quadra-Lote</a>
+                                <a class="nav-link ms-5" href="#4_1_3_infos_ficais">Informações fiscais</a>
                             </nav>
-
-                            <a class="nav-link" href="#2_cursor" style="color: black;">Cursor</a>
-
-                            <a class="nav-link" href="#3_camadas"style="color: black;">Menu Camadas</a>
+                            <a class="nav-link" href="#4_2_pesquisa">Pesquisa</a>
+                            
                             <nav class="nav nav-pills flex-column">
-                                <a class="nav-link my-1" href="#3_1_mapa_base">Mapa Base</a>
-                                <a class="nav-link my-1" href="#3_2_camadas">Camadas</a>
-                                <a class="nav-link my-1" href="#3_3_infos_camadas">Informações Sobre Camadas</a>
-                            </nav>
-
-                            <a class="nav-link" href="#4_ferramentas"style="color: black;">Menu de Ferramentas</a>
-
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link my-1" href="#4_1_infos">Informações do Lote</a>
-                                
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ms-5" href="#4_1_2_SQL">Setor-Quadra-Lote</a>
-                                    <a class="nav-link ms-5" href="#4_1_3_infos_ficais">Informações fiscais</a>
-                                </nav>
-
-                                <a class="nav-link" href="#4_2_pesquisa">Pesquisa</a>
-                                
-                                <nav class="nav nav-pills flex-column">
-                                    <div class="accordion" id="accordionOneMenu">
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <a class="nav-link" href="#4_2_1_porSQL">Por SQL</a>
-                                                </button>
-                                            </h6>
-                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1,#accordion2">
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_1_setor_quadra"> Setor-Quadra</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_2_licenciamento">Licenciamento <br>Sistema SLCe</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_3_zoneamento">SISZON-zoneamento</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_4_iptu">Consulta ao IPTU</a></div>
-                                            </div>
+                                <div class="accordion" id="accordionOneMenu">
+                                    <div class="accordion-item">
+                                        <h6 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <a class="nav-link" href="#4_2_1_porSQL">Por SQL</a>
+                                            </button>
+                                        </h6>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1,#accordion2">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_1_setor_quadra"> Setor-Quadra</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_2_licenciamento">Licenciamento <br>Sistema SLCe</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_3_zoneamento">SISZON-zoneamento</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_1_4_iptu">Consulta ao IPTU</a></div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <a class="nav-link ms-5" href="#4_2_2_por_endeco">Por endereço</a>
+                                <a class="nav-link ms-5" href="#4_2_2_por_endeco">Por endereço</a>
 
-                                    <div class="accordion" id="accordion2">
-                                        <div class="accordion-item">
-                                            <h6 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button  ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                    <a class="nav-link" href=#4_2_3_outras_consultas>Outras Consultas</a>
-                                                </button>
-                                            </h6>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1,#accordion2">
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_1_download">Download<br>Croquis e Plantas</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_2_marco_geodesico">Marco Geodésico</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_3_download_imgMDC">Download Imagem/MDC</a></div>
-                                            </div>
+                                <div class="accordion" id="accordion2">
+                                    <div class="accordion-item">
+                                        <h6 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button  ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                <a class="nav-link" href=#4_2_3_outras_consultas>Outras Consultas</a>
+                                            </button>
+                                        </h6>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1,#accordion2">
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_1_download">Download<br>Croquis e Plantas</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_2_marco_geodesico">Marco Geodésico</a></div>
+                                            <div class="accordion-body ms-1"><a class="nav-link" href="#4_2_3_3_download_imgMDC">Download Imagem/MDC</a></div>
                                         </div>
                                     </div>
-                                </nav>
-                                
-
-                                <a class="nav-link" href="#4_3_desenho_medicoes">Desenho e Medições</a>
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ms-5" href="#4_3_1_medicoes">Medições</a>
-                                    <a class="nav-link ms-5"href="#4_3_2_desenho">Desenho</a>
-                                </nav>
-                                <a class="nav-link" href="#4_4_MDT">MDT</a>
+                                </div>
                             </nav>
+                            
 
-                            <a class="nav-link" href="#5_glossario_de_siglas"style="color: black;">Glossário de Siglas</a>
-
+                            <a class="nav-link" href="#4_3_desenho_medicoes">Desenho e Medições</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-5" href="#4_3_1_medicoes">Medições</a>
+                                <a class="nav-link ms-5"href="#4_3_2_desenho">Desenho</a>
+                            </nav>
+                            <a class="nav-link" href="#4_4_MDT">MDT</a>
                         </nav>
+
+                        <a class="nav-link" href="#5_glossario_de_siglas"style="color: black;">Glossário de Siglas</a>
+
+                    </nav>
 
                     
                 </nav>

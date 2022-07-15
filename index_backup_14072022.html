@@ -121,14 +121,14 @@
                                         <div class="accordion-item">
                                             <h6 class="accordion-header" id="headingOne">
                                                 <button class="accordion-button ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <a class="nav-link" href="#pesquisa-sql">Por SQL</a>
+                                                <a class="nav-link" href="#pesquisa-SQL">Por SQL</a>
                                                 </button>
                                             </h6>
                                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1,#accordion2">
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#lote-IPTU-SQL" style="color: rgb(118, 118, 119)">Lote, IPTU, SQL</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#zoneamento" style="color: rgb(118, 118, 119)">Zoneamento</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#licenciamento" style="color: rgb(118, 118, 119)">Licenciamento</a></div>
-                                                <div class="accordion-body ms-1"><a class="nav-link" href="#tombamento" style="color: rgb(118, 118, 119)">Tombamento</a></div>
+                                                <div class="accordion-body ms-1"><a class="nav-link" href="#pesq-setor-quadra" style="color: rgb(118, 118, 119)"> Setor-Quadra</a></div>
+                                                <div class="accordion-body ms-1"><a class="nav-link" href="#licenciamento" style="color: rgb(118, 118, 119)">Licenciamento <br>Sistema SLCe</a></div>
+                                                <div class="accordion-body ms-1"><a class="nav-link" href="#zoneamento" style="color: rgb(118, 118, 119)">SISZON-zoneamento</a></div>
+                                                <div class="accordion-body ms-1"><a class="nav-link" href="#IPTU" style="color: rgb(118, 118, 119)">Consulta ao IPTU</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -727,78 +727,10 @@
 
                         <h4 id="como-pesquisar">Como pesquisar?</h4>
 
-                        <h4 id="download-arquivos">Download de arquivos</h4>                
-                            <p>O conteúdo do GeoSampa está disponível para download além dos mapas articulados. 
-                                Para fazer o download, clique no ícone <img src="images/0236_1_botao_download.png" alt="ícone de download de camadas"> 
-                                e escolha o tema de interesse e em seguida, os arquivos desejados.  </p>
-                            
-                            <p>Alguns arquivos podem estar divididos por distritos (edificações, por
-                            exemplo) devido ao grande volume de dados.
-                            Lembre-se de verificar o local que serão armazenados os arquivos
-                            obtidos pelo download nas configurações de seu navegador.</p>
-                            <img class="img-fluid mx-auto justify-content-center p-4" src="images/1-2_ex_dados-abertos.jpg" style="display: flex;"> 
-                            <img class="img-fluid mx-auto justify-content-center p-4 pb-5" src="images/1-2_ex2_dados-abertos.jpg" style="display: flex;">
-    
-                            <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
-    
-                            <br>
-    
-                                <table>
-                                    <thead></thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><strong>PDF</strong></td>
-                                            <td>Portable Document Format):arquivo para visualização, contendo o mapeamento
-                                                planialtimétrico do MDC;</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>DXF</strong></td>
-                                            <td>(Drawing Exchange Format):arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. Os
-                                                arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano
-                                                (SCM), representadas como quadrículas no mapa;</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>DXF | MDT</strong></td>
-                                            <td>arquivo em formato CAD,contendo o modelo digital do terreno, ou seja, altimetria doMDC representada por nuvem de pontos 3D;</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>SHP</strong></td>
-                                            <td>(Shapefile);</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>KMZ</strong></td>
-                                            <td>(Keyhole Markup Zipped)</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>XLS | CSV</strong></td>
-                                            <td>planilhas de dados e séries históricas</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            <p>&nbsp;</p>
-
+                        <h4 id="download-arquivos">Download de arquivos</h4>
 
                         <h4 id="download-croquis-plantas">Download de croquis e plantas</h4>
-                            
-                            <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Área Pública/Planta".
-                                Então escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
 
-                            <p> Estas camadas - Cadastro de Área Pública, Croqui Patrimonial e Área
-                                Cedida - estão no grupo Cadastro dentro do subgrupo Área Pública. A
-                                camada Utilidade Pública e Interesse Social (DIS / DUP ) está no grupo
-                                Utilidade Pública e Interesse Social.</p>
-
-                            <p>Estas camadas - Área Urbanizada Regularizada - AU e Arruamento -
-                                ARR - estão no grupo Cadastro dentro do subgrupo Parcelamento.</p>
-
-                            <img  class="img-fluid mx-auto justify-content-center p-5" src="images/26_download_croquis_plantas.png" height="95%" width="95%"
-                                        alt="Imagem mostrando onde localizar, para cada tipo de download a camada referência ue precisa estar ativada.
-                                        Primeiro,  se, localizar área pública: grupo Cadastro, subgrupo Área Pública, Cadastro de área pública.
-                                        Segundo, se, Localizar Croqui Patrimonial: grupo Cadastro, subgrupo Área Pública, Croqui Patrimonial.
-                                        Terceiro, se, área cedida: grupo Cadastro, subgrupo Área Pública, Área Cedida.
-                                        Quarto, se, Localizar Plantas DIS,DUP: grupo Legislação Urbana, subgrupo Bens Protegidos, Utilidades Públicas e Interesse ">
-
-                        
                         <h4 id="desenho-medicoes">Desenho e medições</h4>
                             <h5>Calcular distâncias, área e ângulos</h5>
                                 <p> Ao clicar no botão <img src="images/35_1_medicoes_menu.png" 
@@ -858,59 +790,59 @@
 
                     <hr> 
 
-                        <h4 id="pesquisa-sql">Pesquise a partir do SQL</h4>
-                            
-                            <h5 id="lote">1. Pesquisa por lote</h5>
-                        
-                            <h5 id="IPTU">2. Consulta ao IPTU</h5>
+                        <h4 id="pesquisa-SQL">Pesquise a partir do SQL</h4>
+                            <h5 id="pesq-setor-quadra">1. Setor quadra</h5>
+
+                                <p> A aba Setor-Quadra aproxima a visualização do lote, após o
+                                    preenchimento das lacunas .</p>
+                                <img class="img-fluid mx-auto justify-content-center p-2" src="images/4_2_1_1-setor-quadra.jpg" alt="imagem de setor-quadra" height="576px" width="1021px">
+
+                                
+                                    
+                            <h5 id="licenciamento">2. Licenciamento - sistema SLCe</h5>
+                                <p>O Sistema de Licenciamento Eletrônico de Construção é gerenciado pela Secretaria Municipal de Licenciamento e compila os seguintes processos:</p>
+                                <div class="row">
+                                    <div class="column">
+                                    <h6> I- Licenciamento de edificação nova ou reforma para os seguintes usos:</h6>
+                                    <p> Residências unifamiliares; <br>Casas geminadas; <br>Casas sobrepostas;<br> Usos não residenciais até 1.500 m² de área construída;</p>
+                                    </div>
+                                    <div class="column" >
+                                    <h6>II– Pedidos de licenças complementares tais como:</h6>
+                                    <p>
+                                    Estande de vendas;  <br> Certificado de conclusão;<br> Grua; <br> Troca de responsabilidade técnica;<br>
+                                    Tapume; <br> Comunicação de obras de emergência;<br> Desdobro e remembramento de lote; <br>  Outras 		comunicações; <br> Alvarás de demolição;<br>
+                                    </p>
+                                    </div>
+                                </div>
+                                
+                                <p> <strong>Passo a passo:</strong>
+                                    <ol class="list-group list-group-numbered p-3 my-3">
+                                        <li class="list-group-item">Primeiro, à esquerda, localize a ferramenta “Pesquisar”, selecione a aba ”Licenciamento” e preencha as informações de setor, quadra e lote, depois clique em “Listar”.</li>
+                                        <li class="list-group-item">Para obter um relatório em PDF, vá até “Documento Alvará SLCe”, clique em “Clique aqui para abrir”. </li>
+                                        <li class="list-group-item">Abrirá uma caixa de diálogo com as informações disponíveis no SLCe sobre ao SQL informado. </li>
+                                        <li class="list-group-item">Ao clicar no link “Clique aqui para abrir” o documento fica disponível para visualização e download.</p></li>
+                                    </ol>
+                                        
+                                <img class="img-fluid mx-auto justify-content-center p-2" src="images/4_2_1_2-SLCe.jpg" alt="imagem com SLCe" height="576px" width="1021px">
+
+                            <h5 id="zoneamento">3. SISZON-zoneamento</h5>
+
+                                <p>No botão <strong>Pesquisar</strong> <img src="images/3_1_lupa.png" alt="imagem lupa"> , localize a aba Zoneamento e preencha Setor, Quadra e Lote. <br> O resultado apresenta: zoneamento, parâmetros de ocupação, quota
+                                    ambiental e notas - quadro 3 da lei n° 16.402/2016. </p>  
+                                <img class="img-fluid mx-auto justify-content-center px-1 py-4"  src="images/4_2_1_3-siszon.jpg" alt="imagem ao apertar a lupa">
+                                <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado</p>  
+                                <img class="img-fluid mx-auto justify-content-centerpx-1 py-4" src="images/4_2_1_3-siszon-relatorio.jpg" alt="imagem ao clicar visualizar impressão" height="576px" width="1021px">
+                                <p>Para saber mais informações sobre o zoneamento, observe a caixa <strong>“Mensagem” </strong> e vá no link <strong>“clique aqui”</strong>. </p>  
+                                <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/4_2_1_3-siszon-visualizar-impressao.jpg " alt="imagem com página extra" height="700px" width="px">
+
+                            <h5 id="IPTU">4. Consulta ao IPTU</h5>
                                 <p> À esquerda, localize a ferramenta “Pesquisar” , selecione a aba
                                     IPTU e preencha as informações de setor, quadra e lote, depois clique
                                     em “Listar”</p>
                                 <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/4_2_1_4-iptu.jpg"height="576px" width="1021px"> 
                                 <p> Aparecerá uma caixa para verificação de acesso e depois as 
                                     informações do IPTU do lote indicado </p>
-                                <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/4_2_1_4-iptu-dados.jpg" style="display: flex;"> 
-
-                            <h5 id="lote-IPTU-SQL">3. Setor quadra</h5>
-                                <p> A aba Setor-Quadra aproxima a visualização do lote, após o
-                                    preenchimento das lacunas .</p>
-                                <img class="img-fluid mx-auto justify-content-center p-2" src="images/4_2_1_1-setor-quadra.jpg" alt="imagem de setor-quadra" height="576px" width="1021px">
-
-                        <h4 id="zoneamento">Pesquisa sobre o zoneamento - SISZON</h5>
-                            <p>No botão <strong>Pesquisar</strong> <img src="images/3_1_lupa.png" alt="imagem lupa"> , localize a aba Zoneamento e preencha Setor, Quadra e Lote. <br> O resultado apresenta: zoneamento, parâmetros de ocupação, quota
-                                ambiental e notas - quadro 3 da lei n° 16.402/2016. </p>  
-                            <img class="img-fluid mx-auto justify-content-center px-1 py-4"  src="images/4_2_1_3-siszon.jpg" alt="imagem ao apertar a lupa">
-                            <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado</p>  
-                            <img class="img-fluid mx-auto justify-content-centerpx-1 py-4" src="images/4_2_1_3-siszon-relatorio.jpg" alt="imagem ao clicar visualizar impressão" height="576px" width="1021px">
-                            <p>Para saber mais informações sobre o zoneamento, observe a caixa <strong>“Mensagem” </strong> e vá no link <strong>“clique aqui”</strong>. </p>  
-                            <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/4_2_1_3-siszon-visualizar-impressao.jpg " alt="imagem com página extra" height="700px" width="px">
-
-                                    
-                        <h4 id="licenciamento">Licenciamento - sistema SLCe</h5>
-                            <p>O Sistema de Licenciamento Eletrônico de Construção é gerenciado pela Secretaria Municipal de Licenciamento e compila os seguintes processos:</p>
-                            <div class="row">
-                                <div class="column">
-                                <h6> I- Licenciamento de edificação nova ou reforma para os seguintes usos:</h6>
-                                <p> Residências unifamiliares; <br>Casas geminadas; <br>Casas sobrepostas;<br> Usos não residenciais até 1.500 m² de área construída;</p>
-                                </div>
-                                <div class="column" >
-                                <h6>II– Pedidos de licenças complementares tais como:</h6>
-                                <p>
-                                Estande de vendas;  <br> Certificado de conclusão;<br> Grua; <br> Troca de responsabilidade técnica;<br>
-                                Tapume; <br> Comunicação de obras de emergência;<br> Desdobro e remembramento de lote; <br>  Outras 		comunicações; <br> Alvarás de demolição;<br>
-                                </p>
-                                </div>
-                            </div>
-                                
-                            <p> <strong>Passo a passo:</strong>
-                            <ol class="list-group list-group-numbered p-3 my-3">
-                                <li class="list-group-item">Primeiro, à esquerda, localize a ferramenta “Pesquisar”, selecione a aba ”Licenciamento” e preencha as informações de setor, quadra e lote, depois clique em “Listar”.</li>
-                                <li class="list-group-item">Para obter um relatório em PDF, vá até “Documento Alvará SLCe”, clique em “Clique aqui para abrir”. </li>
-                                <li class="list-group-item">Abrirá uma caixa de diálogo com as informações disponíveis no SLCe sobre ao SQL informado. </li>
-                                <li class="list-group-item">Ao clicar no link “Clique aqui para abrir” o documento fica disponível para visualização e download.</p></li>
-                            </ol>
-                                        
-                                <img class="img-fluid mx-auto justify-content-center p-2" src="images/4_2_1_2-SLCe.jpg" alt="imagem com SLCe" height="576px" width="1021px">
+                                <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/4_2_1_4-iptu-dados.jpg" style="display: flex;">
 
 
                         <h4 id="pesq-endereco">Pesquise a partir do endereço</h4>
@@ -929,6 +861,77 @@
 
                     <!--Revisar instruções e adicionar ID -->
 
+
+                        <h4 id="download">Download de arquivos</h4>                  
+                            <p>O conteúdo do GeoSampa está disponível para download além dos mapas articulados. 
+                                Para fazer o download, clique no ícone <img src="images/0236_1_botao_download.png" alt="ícone de download de camadas"> 
+                                e escolha o tema de interesse e em seguida, os arquivos desejados.  </p>
+                            
+
+                            <p>Alguns arquivos podem estar divididos por distritos (edificações, por
+                                exemplo) devido ao grande volume de dados.
+                                Lembre-se de verificar o local que serão armazenados os arquivos
+                                obtidos pelo download nas configurações de seu navegador.</p>
+                                <img class="img-fluid mx-auto justify-content-center p-4" src="images/1-2_ex_dados-abertos.jpg" style="display: flex;"> 
+                                <img class="img-fluid mx-auto justify-content-center p-4 pb-5" src="images/1-2_ex2_dados-abertos.jpg" style="display: flex;">
+
+                            <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
+
+                            <br>
+
+                            <table>
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>PDF</strong></td>
+                                        <td>Portable Document Format):arquivo para visualização, contendo o mapeamento
+                                            planialtimétrico do MDC;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DXF</strong></td>
+                                        <td>(Drawing Exchange Format):arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. Os
+                                            arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano
+                                            (SCM), representadas como quadrículas no mapa;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DXF | MDT</strong></td>
+                                        <td>arquivo em formato CAD,contendo o modelo digital do terreno, ou seja, altimetria doMDC representada por nuvem de pontos 3D;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SHP</strong></td>
+                                        <td>(Shapefile);</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>KMZ</strong></td>
+                                        <td>(Keyhole Markup Zipped)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XLS | CSV</strong></td>
+                                        <td>planilhas de dados e séries históricas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p>&nbsp;</p>
+                        
+                        <h4 id="croquis-plantas">Download de croquis e plantas</h4>
+                            
+                            <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Área Pública/Planta".
+                                Então escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
+
+                            <p> Estas camadas - Cadastro de Área Pública, Croqui Patrimonial e Área
+                                Cedida - estão no grupo Cadastro dentro do subgrupo Área Pública. A
+                                camada Utilidade Pública e Interesse Social (DIS / DUP ) está no grupo
+                                Utilidade Pública e Interesse Social.</p>
+
+                            <p>Estas camadas - Área Urbanizada Regularizada - AU e Arruamento -
+                                ARR - estão no grupo Cadastro dentro do subgrupo Parcelamento.</p>
+
+                            <img  class="img-fluid mx-auto justify-content-center p-5" src="images/26_download_croquis_plantas.png" height="95%" width="95%"
+                                        alt="Imagem mostrando onde localizar, para cada tipo de download a camada referência ue precisa estar ativada.
+                                        Primeiro,  se, localizar área pública: grupo Cadastro, subgrupo Área Pública, Cadastro de área pública.
+                                        Segundo, se, Localizar Croqui Patrimonial: grupo Cadastro, subgrupo Área Pública, Croqui Patrimonial.
+                                        Terceiro, se, área cedida: grupo Cadastro, subgrupo Área Pública, Área Cedida.
+                                        Quarto, se, Localizar Plantas DIS,DUP: grupo Legislação Urbana, subgrupo Bens Protegidos, Utilidades Públicas e Interesse ">
 
                         <h4 id="marco-geodesico" >Marco Geodésico</h4>
 

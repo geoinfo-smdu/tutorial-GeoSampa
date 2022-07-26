@@ -95,6 +95,7 @@
                                 <nav class="nav nav-pills flex-column">
                                     <a class="nav-link" href="#dados-abertos" style="font-weight: 525">Dados Abertos</a>
                                     <a class="nav-link" href="#metadados" style="font-weight: 525">Metadados</a>
+                                    <a class="nav-link" href="#escala" style="font-weight: 525">Escala</a>
                                 </nav>
                             </nav>
 
@@ -323,19 +324,9 @@
                         </table>
 
                         <br>
-
-                        <p>O Metadados (botão "Acessar Metadados") apresenta as
-                            características de todas as camadas existentes no Geosampa:
-                            denominação, descrição do conteúdo, escala, tipo de arquivo, órgão
-                            responsável, periodicidade de atualização, entre outras.</p>
-
-                    <p>&nbsp;</p>
-
-                        <p><strong>Mapa Digital da Cidade:</strong>Esta é a primeira tela do mapa, ao acessar o GeoSampa. A seguir, serão descritas as alternativas
-                            de navegação e ferramentas disponíveis. </p>    
-                            <img class="img-fluid mx-auto justify-content-center p-2" src="images/mapa-digital-da-cidade.jpg">
                     
                     <p>&nbsp;</p>
+
 
                 <h1 id="conceitos">Conceitos</h1>
 
@@ -345,31 +336,57 @@
 
                         <p>O formato aberto dos arquivos permite sua reutilização em diversos aplicativos digitais. Ao clicar em “Dados Abertos”, a relação dos arquivos aparecerá
                             de forma temática. Escolha um tema e faça o download do arquivo no formato desejado. </p>
-
-                    <!-- Incluir imagem -->
-
                         <p>Os dados em formato aberto permitem que qualquer cidadão utilize variados softwares para adaptá-los às sua necessidade. Além disso, essas
                             informações contribuem para a transparência e o processo participativo, bem como para a criação de novas aplicações colaborativas.</p>
+
+                        <!-- Incluir imagem -->
 
 
                     <h3 id="metadados">Acessar Metadados</h3>
 
                         <p>Os metadados são as informações sobre cada uma das camadas, com o objetivo de proporcionar a correta utilização e interpretação dos
-                            dados. <!-- São dados sobre os dados. --> </p>
-                        
-                        <p>Ao clicar no botão Acessar Metadados, localizado no canto superior direito, abrirá um arquivo com diversas planilhas (abas):</p>
+                            dados, contendo:  denominação, descrição do conteúdo, escala, tipo de arquivo, órgão
+                            responsável, periodicidade de atualização, entre outras informações.<!-- São dados sobre os dados. --> </p>
+
+                        <p>Assim, ao clicar no botão "Acessar Metadados", localizado no canto superior direito, abrirá um arquivo com diversas planilhas (abas):</p>
 
                         <p><strong>Consulta:</strong> planilha para consulta de metadados das camadas,
-                            sistemas e downloads.</p>
+                            sistemas e downloads</p>
                         <p><strong>Metadados:</strong> listagem de camadas, sistemas e downloads disponíveis, que esta vinculada a 1° planilha</p>
+                        <p><strong>Categoria/Tipo Logradouro:</strong> relação dos tipos de logradouros (rua, avenida, estrada, etc.) e suas respectivas siglas</p>
+                        <p><strong>Predominância de Uso:</strong> tipos de uso de solo conforme cadastro municipal fiscal</p>
+                        <p><strong>Dicionário de logradouros:</strong> descrição das variáveis da base de dados geoespacial dos logradouros</p>
+                        <p><strong>Datum/Projeção:</strong> modelo matemático teórico da representação da superfície da Terra</p>
+                        <p><strong>IPTU:</strong> descrição das variáveis da base de dados disponível para download no GeoSampa</p>
+                        <p><strong>SLC-e:</strong> tipos de alvarás disponíveis para consulta no GeoSampa</p>
+                        <p><strong>Webservice:</strong> serviços de mapa via web</p>
+                        <p><strong>Publicação 1988 - Vegetação:</strong> descrição e legendas do mapa</p>
 
                         <img class="img-fluid mx-auto justify-content-center p-2" src="images/1-3_acessar_metadados.jpg" alt="imagem com detaque para link metadados" height="576px" width="1021px">
                     
+                    <h3 id="escala">Escala</h3>
+                        
+                        <h5>Escala cartográfica é a proporção de redução da área da paisagem real para sua representação no mapa. 
+                            Existem dois tipos de escalas cartográficas: numérica e gráfica.</h5>
+                        <h5><strong>Escala numérica:</strong> expressa o valor em números</h5>
+                        <p>No GeoSampa a escala mostra a variante dessa proporção no canto inferior esquerdo do mapa.
+                            Por exemplo: 100000 (cem mil). Isso significa que um centímetro no mapa corresponde a 100 centímetros 
+                            (equivalente a 1 quilômetro) na paisagem real.</p>
+                        <h5><strong>Escala gráfica:</strong> cada centímetro da escala vai corresponder a uma certa distância, expressa em metros ou quilômetros</h5>
+                        <p>&nbsp;</p>
+                        <p>Para saber mais <a href="https://pt.wikipedia.org/wiki/Escala_cartogr%C3%A1fica">clique aqui</a>.</p>
+
+
                         <p>&nbsp;</p>
                     
                 <h1 id="tela-inicial">Tela Inicial</h1>
 
                 <hr>
+
+                        <h3>Mapa Digital da Cidade</h3> 
+                            <p>Esta é a primeira tela do mapa, ao acessar o GeoSampa. A seguir, serão descritas as alternativas
+                                de navegação e ferramentas disponíveis.</p> 
+                                <img class="img-fluid mx-auto justify-content-center p-2" src="images/mapa-digital-da-cidade.jpg">
 
                     <h3 id="ferramentas-cursor">Menu de Ferramentas e tipos de cursor</h3>
 
@@ -665,11 +682,13 @@
 
 
                     <h3 id="camadas">Camadas</h3>
-                        <p>Em <strong>camadas</strong>, está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.</p>
+                        <p>Em <strong>Camadas</strong>, está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.</p>
                         <p>As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão <strong>+</strong> e habilitar a camada de interesse.
                         Caso queira habilitar todas as camadas do grupo, poderá clicar apenas uma vez neste. Todas as camadas serão habilitadas automaticamente.</p>
-                        <p>As informações de cada camada estão disponíveis no botão <strong>metadados</strong>. Este se encontra na parte superior direita, conforme
-                        imagem na página anterior.</p>
+                        <!-- Incluir imagem -->
+
+                        <p>As informações de cada camada estão disponíveis no botão <strong>Acessar Metadados</strong>, que se encontra na parte superior direita, conforme
+                        indicado na sessão deste tutorial dedicada aos metadados.</p>
                         
 
                     <h3 id="infos-feicoes-elementos">Informações sobre as feições ou elementos do mapa</h3>
@@ -731,15 +750,16 @@
                     <hr>
 
                         <h4 id="como-pesquisar">Como pesquisar?</h4>
+                            <!-- conteúdo??? --> 
 
                         <h4 id="download-arquivos">Download de arquivos</h4>                
                             <p>O conteúdo do GeoSampa está disponível para download além dos mapas articulados. 
                                 Para fazer o download, clique no ícone <img src="images/0236_1_botao_download.png" alt="ícone de download de camadas"> 
-                                e escolha o tema de interesse e em seguida, os arquivos desejados.  </p>
+                                escolha o tema de interesse e, em seguida, os arquivos desejados.  </p>
                             
-                            <p>Alguns arquivos podem estar divididos por distritos (edificações, por
+                            <p>Alguns arquivos podem estar divididos por distritos (como "Edificação", por
                             exemplo) devido ao grande volume de dados.
-                            Lembre-se de verificar o local que serão armazenados os arquivos
+                            Lembre-se de verificar o local em que serão armazenados os arquivos
                             obtidos pelo download nas configurações de seu navegador.</p>
                             <img class="img-fluid mx-auto justify-content-center p-4" src="images/1-2_ex_dados-abertos.jpg" style="display: flex;"> 
                             <img class="img-fluid mx-auto justify-content-center p-4 pb-5" src="images/1-2_ex2_dados-abertos.jpg" style="display: flex;">
@@ -785,16 +805,16 @@
 
                         <h4 id="download-croquis-plantas">Download de croquis e plantas</h4>
                             
-                            <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Área Pública/Planta".
-                                Então escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
+                            <p> Para realizar o download você precisará clicar na aba "Área Pública/Planta" no menu <strong>Pesquisar</strong>.
+                                Em seguida escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
 
-                            <p> Estas camadas - Cadastro de Área Pública, Croqui Patrimonial e Área
-                                Cedida - estão no grupo Cadastro dentro do subgrupo Área Pública. A
-                                camada Utilidade Pública e Interesse Social (DIS / DUP ) está no grupo
+                            <p> As camadas Cadastro de Área Pública, Croqui Patrimonial e Área
+                                Cedida estão no grupo Cadastro dentro do subgrupo Área Pública. A
+                                camada Utilidade Pública e Interesse Social (DIS/DUP) está no grupo
                                 Utilidade Pública e Interesse Social.</p>
 
-                            <p>Estas camadas - Área Urbanizada Regularizada - AU e Arruamento -
-                                ARR - estão no grupo Cadastro dentro do subgrupo Parcelamento.</p>
+                            <p> As camadas Área Urbanizada Regularizada - AU e Arruamento -
+                                ARR estão no grupo Cadastro dentro do subgrupo Parcelamento.</p>
 
                             <img  class="img-fluid mx-auto justify-content-center p-5" src="images/26_download_croquis_plantas.png" height="95%" width="95%"
                                         alt="Imagem mostrando onde localizar, para cada tipo de download a camada referência ue precisa estar ativada.
@@ -848,17 +868,50 @@
                                 <p> Os desenhos inseridos ficarão ativos apenas durante cada seção de navegação. Caso feche o
                                     GeoSampa, ou desligue o navegador, os desenhos não serão salvos.</p>
 
-                        <h4 id="mdt">Modelo Digital de Terreno (MDT)</h4>
-                            <p>Os arquivos estão em formato LAZ (LAS compactado) e podem ser usados para inúmeras aplicações com auxílio de diversos software. Com esses dados, por exemplo, a cratera e a cachoeira na zona sul 
-                            da cidade ficam evidentes em imagens a baixo:</p>
+                        <h4 id="mdt">LiDAR 3D - Modelo Digital de Terreno (MDT)</h4>
+                            <p> A partir dos dados obtidos no aerolevantamento de 2017, utilizando um sensor laser emitindo feixes embarcados em helicóptero, 
+                                foi disponibilizada a cartografia 3D de toda a cidade. 
+                                O produto é uma nuvem de pontos que possibilita a reconstrução do objeto em terceira dimensão.</p>
+                            <p> Com isso, é possível visualizar pontos no terreno (que constituem o MDT – Modelo Digital de Terreno), assim como o Modelo Digital de Superfície – MDS, que compreende as edificações, 
+                                árvores, obras viárias entre outros objetos, na forma nuvem de pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos 
+                                estão em formato LAZ (LAS compactado) e podem ser usados para inúmeras aplicações com auxílio de diversos softwares. Com esses dados, por exemplo, a cratera e a cachoeira na 
+                                zona sul da cidade ficam evidentes em imagens a baixo:</p>
                             <img class="img-fluid mx-auto justify-content-center px-2 py-5" src="images/4_4-ex-mdt.jpg" alt="exemplo de mdt" height="350px" width="350px">
                             <img class="img-fluid mx-auto justify-content-center px-2 pb-5" src="images/4_4-ex2-mdt.jpg" alt="segunda parte do exemplo" height="450px" width="450px">
                                     
-                            <p> Para acessar as bases MDT clique no ícone  <img src="images/4_4-mdt.jpg" alt="ícone MDT"> LiDAR 3D. Na área de interesse, clique e arraste para selecionar as páginas. </p>
-                            <img class="img-fluid mx-auto justify-content-center px-3 pt-5" src="images/310_2_guiaLIDAR.gif" alt="gif de como acessar o MDT" height="576px" width="1021px">
-                        
-                                
+                            <p> Para a visualização web dos dados 3D, localize e clique na ferramenta  <img src="images/4_4-mdt.jpg" alt="ícone MDT"> "LiDAR 3D" e selecione a porção do território 
+                                da cidade que deseja visualizar. Após esse comando, abrirá uma tela para que escolher que tipo de dado se quer abrir no visualizador web: MDS, onde estão representados 
+                                o terreno e as edificações, árvores, obras viárias e outros objetos; ou MDT, em que somente o terreno é representado.</p>
 
+                            <!-- Incluir https://youtu.be/8gQUa9nh5mA -->
+
+                            <p> Após escolher seu local de interesse e o tipo de modelo digital, clique em “Visualizar” e você será direcionado para uma nova janela, fora do mapa do GeoSampa, 
+                                onde serão carregados os dados do LiDAR. Nesse ambiente, você poderá aproximar a visualização do modelo 3D, bem como fazer medições e análises.</p>
+
+                            <!-- Incluir imagem LiDAR1.png -->
+
+                            <p> O visualizador LiDAR possui as seguintes funções com o mouse:</p>
+                            <p> Botão direito, você pode mover o espaço analisado dentro da janela de visualização.</p>
+
+                            <!-- Incluir https://youtu.be/eNNWcycTDso -->
+
+                            <p> Botão esquerdo, você ajusta a orientação da visualização do modelo 3D (rotacionar, inclinar, ajustar o ângulo de visão, etc.).</p>
+
+                            <!-- Incluir https://youtu.be/G0UTql4x6ss -->
+
+                            <p> Botão de rolagem (scroll), você dá zoom no modelo 3D.</p>
+
+                            <!-- Incluir https://youtu.be/EPWOuHub9bw -->
+
+                            <p> O visualizador LiDAR possui menus de configurações e ferramentas, dispostos na lateral esquerda da tela, que permitem que você aproxime 
+                                o modelo 3D, calcule altura, entre outras funções. Entre as ferramentas disponíveis nesse menu, você vai encontrar o “Orçamento de pontos”, 
+                                onde você pode escolher quantos pontos vão estar disponíveis para visualização na nuvem de pontos, bem como ferramentas para medir altura de 
+                                edificações, distâncias, ângulo, volume, etc.</p>
+
+                            <!-- Incluir https://youtu.be/hR_KjoM8e20 -->
+                        
+
+                            
                     <h3 id="pesquisa">Principais Pesquisas</h3>
 
                     <hr> 

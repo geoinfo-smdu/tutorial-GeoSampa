@@ -62,15 +62,17 @@ td, th {
 img {
     height: auto;
     }
-    
+
+
 .nav-pills a.nav-link.active {
-    background-color: rgba(137, 154, 201, 0.116);
+    background-color: rgba(201, 141, 137, 0.116);
     border-radius: 0%;
     color: #2b2c2c;
 }
 
 .nav-pills a.nav-link {
-    color: #575555;
+    color: #3f3e3e;
+    font-weight: 500;
 
 }
 
@@ -79,8 +81,14 @@ img {
     background-color: #f8fafc;
 }
 
-.nav-link{
-    font-weight: 450;
+#nivel1 {
+    color: black;
+    font-weight: 700;
+}
+
+#nivel2{
+    color: #3f3e3e;
+    font-weight: 500;
 }
 
 h1{

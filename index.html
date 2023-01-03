@@ -174,7 +174,13 @@
                     
                     <h3 id="sist-ref-cart">Sistemas de Referência Cartográfica</h3>
 
-                        <p>As informações são disponibilizadas em diversos sistemas de referência cartográfica:</p>
+                        <p>No GeoSampa as informações são disponibilizadas em diversos sistemas de referência cartográfica, 
+                            como SIRGAS2000, SAD69(96) e WGS84. A projeção em SAD69(96) é fornecida apenas em caráter de 
+                            compatibilidade com bases antigas, visto que, em 2014, foi definida a projeção UTM/SIRGAS2000 (EPGS: 31983) 
+                            como a nova referência para o Sistema Geodésico Brasileiro (SGB) e para o Sistema Cartográfico Nacional (SCN). 
+                            Desde então são consideradas oficiais apenas as informações produzidas tendo o SIRGAS2000 como sistema geodésico.</p>
+
+                        <p>Abaixo, estão os sistemas de referência cartográfica que podem ser encontrados no GeoSampa:</p>
 
                         <table width="200" cellspacing="1" cellpadding="1" border="1">
                             <thead>
@@ -212,6 +218,7 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p>*UTM: Universal Transversa de Mercator - Sistema de coordenadas cartesianas</p>
 
                         <br>
 
@@ -223,22 +230,32 @@
                             (SGB) e para o Sistema Cartográfico Nacional (SCN). Desde então são
                             consideradas oficiais apenas as informações produzidas tendo o
                             Sirgas2000 como sistema geodésico.</p>
+
+                        
+                    <h3>Dicas e instruções importantes</h3> 
+                            <!-- Colocar este título como item na barra lateral? -->
                         
                         <p>Verifique se seu bloqueador de “pop-up” está desativado. Caso
                             contrário, alguns downloads podem ser bloqueados.</p>
                         <p>Para evitar possíveis erros, sugerimos realizar periodicamente a
                             limpeza do cache do seu navegador. Para isso, basta acionar o atalho:
                             Ctrl + Shift + Del.</p>
-                        <p>*UTM: Sistema de coordenadas cartesianas - Universal Transversa de
-                                Mercator</p>
+
 
                     <h3 id="servicos-web">Serviços Web</h3>
 
-                        <p>O Geosampa permite visualizar os dados e informações diretamente no
-                            mapa digital da cidade(MDC) e/ou por meio de serviços on-line (WMS e
-                            WFS); permite também download de arquivos em diversos formatos e
-                            software.</p>
-                        <p><strong>Webservice:</strong> Para acessar dados por meio de serviço on-line (Webservice), utilize os links abaixo:</p>
+                        <p>Webservice é método utilizado para transferir dados através de URL/links 
+                            entre diferentes plataformas. Os serviços web do GeoSampa estão disponíveis 
+                            em dois formatos: WMS (Web Map Service) e WFS (Web Feature Service). O primeiro (WMS) 
+                            é um serviço de imagem e que serve, principalmente, como georreferência, não sendo 
+                            possível nenhuma edição ou cruzamento espacial. Já o segundo (WFS) é um serviço que 
+                            disponibiliza o acesso e manipulação dos dados geográficos, a partir do vetor, 
+                            permitindo operações espaciais.</p>
+                        <p>O Geosampa, por meio de seus serviços online (WMS e WFS), possibilita que os usuários 
+                            se conectem em softwares de geoprocessamento e sites, e acessem as informações em um 
+                            ambiente fora do Mapa Digital da Cidade.</p>
+                        <p>Para acessar dados por meio de serviço on-line (Webservice),
+                             utilize os links abaixo:</p>
 
                         <table  width="200" cellspacing="1" cellpadding="1" border="1">
                             <thead>
@@ -312,7 +329,7 @@
                         <p>No GeoSampa a escala mostra a variante dessa proporção no canto inferior esquerdo do mapa.
                             Por exemplo: 100000 (cem mil). Isso significa que um centímetro no mapa corresponde a 100 centímetros 
                             (equivalente a 1 quilômetro) na paisagem real.</p>
-                        <h5><strong>Escala gráfica:</strong> cada centímetro da escala vai corresponder a uma certa distância, expressa em metros ou quilômetros</h5>
+                        <h5><strong>Escala gráfica:</strong> cada segmento da escala gráfica corresponde a certa distância, expressa em metros ou quilômetros.</h5>
                         <p>&nbsp;</p>
                         <p>Para saber mais <a href="https://pt.wikipedia.org/wiki/Escala_cartogr%C3%A1fica">clique aqui</a>.</p>
 
@@ -573,19 +590,20 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:20rem;">   
+                            <div class="card" style="width:16rem;height:25rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_quadrado.png" style="width:35px;height:35px" alt="cursor quadrado">          
                                     <h6 class="card-title"><strong>Quadrado</strong></h6>
                                     <p class="card-text">Aparece para medir distância, área e ângulo (não há
-                                        aderência / atração / ímã); a precisão é limitada pela escala.</p>
+                                        aderência/atração/ímã); a precisão é limitada pela escala ou para 
+                                        selecionar a área de interesse a ser aberta no visualizador LiDAR.</p>
                                 </div>
                                 <img src="images/cursor_ex_quadrado.png" class="card-img-bottom" alt="...">
                             </div>
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:20rem;">   
+                            <div class="card" style="width:16rem;height:25rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_cruz.png" style="width:35px;height:35px" alt="cursor cruz">          
                                     <h6 class="card-title"><strong>Cruz</strong></h6>
@@ -596,7 +614,7 @@
                         </div>
 
                         <div class="col py-3">
-                            <div class="card" style="width:16rem;height:20rem;">   
+                            <div class="card" style="width:16rem;height:25rem;">   
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_texto.png" style="width:35px;height:35px" alt="cursor texto">          
                                     <h6 class="card-title"><strong>Cursor de texto</strong></h6>
@@ -615,12 +633,11 @@
                         <img class="img-fluid mx-auto py-3" src="images/mapa-base_camadas.jpg" style="height: 576px; display: flex">
 
                         <p>Em <strong>Camadas</strong>, está o conteúdo do mapa com as informações georreferenciadas de várias secretarias e órgãos públicos.</p>
-                        <p>As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão <strong>+</strong> e habilitar a camada de interesse.
-                        Caso queira habilitar todas as camadas do grupo, poderá clicar apenas uma vez neste. Todas as camadas serão habilitadas automaticamente.</p>
+                        <p>As camadas estão organizadas em grupos temáticos. Você poderá abrir o grupo clicando no botão <strong>+</strong> e habilitar a camada de interesse.</p>
 
                         <img class="img-fluid mx-auto justify-content-center px-1 py-4" src="images/camadas.jpg" style="width: 850px;">
 
-                        <p>As informações de cada camada estão disponíveis no botão <strong>Acessar Metadados</strong>, que se encontra na parte superior direita, conforme
+                        <p>As informações sobre como cada camada foi produzida estão disponíveis no botão <strong>Acessar Metadados</strong>, que se encontra na parte superior direita, conforme
                         indicado na sessão deste tutorial dedicada aos metadados, que você pode visualizar clicando <a href=#metadados>aqui</a>.</p>
                         
 
@@ -698,7 +715,7 @@
 
                         <iframe width="900" height="500" src="https://www.youtube.com/embed/8gQUa9nh5mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                        <p> Após escolher seu local de interesse e o tipo de modelo digital, clique em “Visualizar” e você será direcionado para uma nova janela, fora do mapa do GeoSampa, 
+                        <p>Depois escolher seu local de interesse e o tipo de modelo digital, clique em “Visualizar” e você será direcionado para uma nova janela, fora do mapa do GeoSampa, 
                             onde serão carregados os dados do LiDAR. Nesse ambiente, você poderá aproximar a visualização do modelo 3D, bem como fazer medições e análises.</p>
 
                         <img class="img-fluid mx-auto justify-content-center py-5" src="images/lidar3d_vizualizador.jpg" alt="visualizador lidar 3d" height="576px" width="1021px">
@@ -779,8 +796,8 @@
                     <hr>
 
                     <h3 id="download-arquivos">Download de arquivos</h3>                
-                        <p>O conteúdo do GeoSampa está disponível para download além dos mapas articulados. 
-                            Para fazer o download, clique no ícone <img src="images/botao_download.png" alt="ícone de download de camadas"> 
+                        <p>Todo o conteúdo do GeoSampa está disponível para download. 
+                            Para isso, clique no ícone <img src="images/botao_download.png" alt="ícone de download de camadas"> 
                             escolha o tema de interesse e, em seguida, os arquivos desejados.  </p>
                         
                         <p>Alguns arquivos podem estar divididos por distritos (como "Edificação", por
@@ -799,30 +816,36 @@
                                 <tbody>
                                     <tr>
                                         <td><strong>PDF</strong></td>
-                                        <td>Portable Document Format):arquivo para visualização, contendo o mapeamento
-                                            planialtimétrico do MDC;</td>
+                                        <td>Portable Document Format: arquivo para visualização, contendo o mapeamento
+                                            planialtimétrico do MDC.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>DXF</strong></td>
-                                        <td>(Drawing Exchange Format):arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. Os
+                                        <td>Drawing Exchange Format: arquivo em formato CAD contendo o mapeamento planialtimétrico do MDC. Os
                                             arquivos estão divididos por folhas do Sistema Cartográfico Metropolitano
-                                            (SCM), representadas como quadrículas no mapa;</td>
+                                            (SCM), representadas como quadrículas no mapa.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>DXF | MDT</strong></td>
-                                        <td>arquivo em formato CAD,contendo o modelo digital do terreno, ou seja, altimetria do MDC representada por nuvem de pontos 3D;</td>
+                                        <td>Arquivo em formato CAD, contendo o modelo digital do terreno, ou seja, altimetria do MDC representada por curvas de níveis.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>SHP</strong></td>
-                                        <td>(Shapefile);</td>
+                                        <td>Shapefile: formato popular de arquivo contendo dados geoespaciais em forma de vetor usado por Sistemas de Informações Geográficas.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>KMZ</strong></td>
-                                        <td>(Keyhole Markup Zipped)</td>
+                                        <td>Keyhole Markup Zipped: linguagem baseada em XML e serve para visualização mapas em 2D e navegadores 
+                                            terrestre em 3D. Esse padrão é utilizado, principalmente, pelo Google Earth.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>XLS | CSV</strong></td>
-                                        <td>planilhas de dados e séries históricas</td>
+                                        <td>Planilhas de dados e séries históricas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>GPKG</strong></td>
+                                        <td>GeoPackage: formato de dados aberto, não proprietário, baseado em padrões para sistema de informações 
+                                            geográficas implementado como um banco de dados.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -949,7 +972,7 @@
 
 
                     <h3 id="zoneamento">Pesquisa sobre o zoneamento - SISZON</h3>
-                        <p>No botão <strong>Pesquisar</strong> <img src="images/botao_pesquisa.png" alt="imagem lupa"> , localize a aba Zoneamento e preencha Setor, Quadra e Lote. <br> O resultado apresenta: zoneamento, parâmetros de ocupação, quota
+                        <p>Essa pesquisa traz a consulta ao Sistema de Zoneamento (SISZON). No botão <strong>Pesquisar</strong> <img src="images/botao_pesquisa.png" alt="imagem lupa"> , localize a aba Zoneamento e preencha Setor, Quadra e Lote. <br> O resultado apresenta: zoneamento, parâmetros de ocupação, quota
                             ambiental e notas - quadro 3 da lei n° 16.402/2016. </p>  
                         <img class="img-fluid mx-auto justify-content-center py-4"  src="images/siszon.jpg" alt="imagem ao apertar a lupa">
                         <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado</p>  
@@ -1001,7 +1024,16 @@
                                 
                     <h3 id="outras-consultas">Outras consultas disponíveis</h3>
 
-                    <!-- Conteúdo? -->
+                        <p>Além das consultas já mencionadas, existem duas consultas estruturadas disponíveis para uso no 
+                            botão <strong>Pesquisar</strong> <img src="images/botao_pesquisa.png" alt="imagem lupa">. A primeira 
+                            é a consulta por Subprefeitura. Para acessá-la, entre no menu Pesquisar, abra a aba Subprefeitura e 
+                            lá está disponível a lista com os nomes das 32 subprefeituras. Ao clicar em uma delas, ficará 
+                            selecionado o território da subprefeitura em questão, possibilitando rapidamente sua localização no mapa.</p>
+                        
+                        <p>A segunda consulta estruturada é dos Distritos e funciona tal qual a das Subprefeituras. No menu 
+                            <strong>Pesquisar</strong>, selecione a aba Distrito e escolhe o distrito de interesse e esse 
+                            será selecionando, permanecendo destacado em azul.</p>
+
 
 
            <h1 id="glossario">Glossário de Siglas</h2> 
@@ -1017,6 +1049,11 @@
                     <tr>
                         <td>EDIFICAÇÃO</td>
                         <td>Obra coberta destinada a abrigar atividade humana ou qualquer instalação, equipamento e material. (Lei n° 16.642/2017 - Código de Obras)</td>
+                    </tr>
+                    <tr>
+                        <td>EPSG</td>
+                        <td>A EPSG vem do nome do Grupo Europeu de Pesquisa Petrolífera (European Petroleum Survey Group), entidade que organizou por meio de códigos 
+                            numéricos os Sistemas de Referência de Coordenadas (SRC) do mundo.</td>
                     </tr>
                     <tr>
                         <td>IMÓVEL</td>

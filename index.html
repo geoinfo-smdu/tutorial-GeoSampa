@@ -49,7 +49,7 @@
                             <li><a class="dropdown-item" href="#IPTU">IPTU</a></li>
                             <li><h6 class="dropdown-header">Outras consultas</h6></li>
                             <li><a class="dropdown-item" href="#download-croquis-plantas">Download de croquis e plantas</a></li>
-                            <li><a class="dropdown-item" href="#marco-geodesico">Marco Geodésico</a></li>
+                            <li><a class="dropdown-item" href="#marco-geodesico">Marco Geodésico e Pontos de Apoio Terrestre</a></li>
                             <li><a class="dropdown-item" href="#img-mdc">Download de Imagens e MDC</a></li>
                         </ul>
                     </li>
@@ -87,7 +87,9 @@
                             <nav class="nav nav-pills flex-column">
                                 <a id="nivel2" class="nav-link ms-5" href="#configurando-ambiente">Configurando o ambiente</a>
                                 <a id="nivel2" class="nav-link ms-5" href="#sist-ref-cart">Sistemas de Referência Cartográfica</a>
+                                <a id="nivel2" class="nav-link ms-5" href="#dicas">Dicas e instruções importantes</a>
                                 <a id="nivel2" class="nav-link ms-5" href="#servicos-web">Serviços Web</a>
+                                
                             </nav>
 
                             <a id="nivel1" class="nav-link" href="#conceitos">Conceitos</a>
@@ -116,7 +118,7 @@
                                 <nav class="nav nav-pills flex-column">
                                     <a id="nivel2" class="nav-link ms-5" href="#download-arquivos">Download de arquivos</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#download-croquis-plantas">Download de croquis e plantas</a>
-                                    <a id="nivel2" class="nav-link ms-5" href="#marco-geodesico">Marco Geodésico</a>
+                                    <a id="nivel2" class="nav-link ms-5" href="#marco-geodesico">Marco Geodésico e Apoio Terrestre</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#img-mdc">Download Imagem/MDC</a>
                                 </nav>
                             </nav>
@@ -221,18 +223,8 @@
                         <p>*UTM: Universal Transversa de Mercator - Sistema de coordenadas cartesianas</p>
 
                         <br>
-
-                        <p><strong>Nota técnica</strong> : No GeoSampa são fornecidos arquivos tanto na projeção
-                            SAD69(96) como SIRGAS2000 e WGS84. A projeção em SAD69(96) é
-                            fornecida apenas em caráter de compatibilidade com bases antigas,
-                            visto que, em 2014, foi definida a projeção UTM/SIRGAS2000 (EPGS:
-                            31983) como a nova referência para o Sistema Geodésico Brasileiro
-                            (SGB) e para o Sistema Cartográfico Nacional (SCN). Desde então são
-                            consideradas oficiais apenas as informações produzidas tendo o
-                            Sirgas2000 como sistema geodésico.</p>
-
-                        
-                    <h3>Dicas e instruções importantes</h3> 
+                                            
+                    <h3 id="dicas">Dicas e instruções importantes</h3> 
                             <!-- Colocar este título como item na barra lateral? -->
                         
                         <p>Verifique se seu bloqueador de “pop-up” está desativado. Caso
@@ -325,7 +317,7 @@
                         
                         <h5>Escala cartográfica é a proporção de redução da área da paisagem real para sua representação no mapa. 
                             Existem dois tipos de escalas cartográficas: numérica e gráfica.</h5>
-                        <h5><strong>Escala numérica:</strong> expressa o valor em números</h5>
+                        <h5><strong>Escala numérica:</strong> expressa o valor em números.</h5>
                         <p>No GeoSampa a escala mostra a variante dessa proporção no canto inferior esquerdo do mapa.
                             Por exemplo: 100000 (cem mil). Isso significa que um centímetro no mapa corresponde a 100 centímetros 
                             (equivalente a 1 quilômetro) na paisagem real.</p>
@@ -412,7 +404,7 @@
                                             Ao clicar na 1ª aba, <strong>“Subprefeitura”</strong> , aparecerá uma caixa com o nome de cada uma das 32 Subprefeituras. Ao selecionar uma com um clique, o zoom aproximará a Subprefeitura
                                             escolhida para visualização. <br>
                                             A próxima aba <strong>“Distrito”</strong>  funciona da mesma forma. Selecionando um dos 92 Distritos, o zoom aproximará sua visualização. <br>
-                                            A terceira aba, <strong>“Marco Geodésico”</strong> apresenta pontos fixos no terreno usados como referencial cartográfico. Para saber mais sobre o assunto, no menu lateral, clique em "Outras Consultas" --> "Marco Geodésico"
+                                            A terceira aba, <strong>“Marco Geodésico/Apoio”</strong> apresenta pontos fixos no terreno usados como referencial cartográfico. Para saber mais sobre o assunto, no menu lateral, clique em "Outras Consultas" --> "Marco Geodésico"
                                         </div>
                                 </div>
                                 </div>
@@ -595,8 +587,7 @@
                                     <img class="card-img-top p-1" src="images/cursor_quadrado.png" style="width:35px;height:35px" alt="cursor quadrado">          
                                     <h6 class="card-title"><strong>Quadrado</strong></h6>
                                     <p class="card-text">Aparece para medir distância, área e ângulo (não há
-                                        aderência/atração/ímã); a precisão é limitada pela escala ou para 
-                                        selecionar a área de interesse a ser aberta no visualizador LiDAR.</p>
+                                        aderência/atração/ímã); a precisão da medida inferida no mapa é limitada pela escala.</p>
                                 </div>
                                 <img src="images/cursor_ex_quadrado.png" class="card-img-bottom" alt="...">
                             </div>
@@ -644,7 +635,7 @@
                     <h3 id="infos-feicoes-elementos">Informações sobre as feições ou elementos do mapa</h3>
                         <p>Habilite, no menu à direita, as camadas das quais buscará mais informações. 
                         Lembre-se que as informações somente aparecerão para as camadas habilitadas no menu. A seguir, clique no botão <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/botao_informacao.png"> e após,
-                        no elemento de interesse no mapa </p>
+                        no elemento de interesse no mapa.</p>
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/uso_botao-informacao.jpg" height="576px" width="1021px">
 
 
@@ -688,7 +679,7 @@
 
                             <p>Em lotes ocupados por condomínio aparecerão as informações de
                                 cada unidade. Atente que também aparece o número do setor, quadra
-                                e lote(SQL).</p>
+                                e lote (SQL).</p>
 
                             <img class="img-fluid mx-auto justify-content-center py-4" src="images/sql_informacao_cond.jpg" height="576px" width="1021px"
                             alt="Imagem indicando lote selecionado e janela com as informações referentes a ele, bom como atributos específicos para condomínios. As informações que aparecem são: setor, 
@@ -700,7 +691,7 @@
     
                     <h3 id="lidar3d">LiDAR 3D - Modelo Digital de Terreno (MDT)</h3>
                         <p> A partir dos dados obtidos no aerolevantamento de 2017, utilizando um sensor laser emitindo feixes embarcados em helicóptero, 
-                            foi disponibilizada a cartografia 3D de toda a cidade. 
+                            foi realizada a cartografia 3D de toda a cidade. 
                             O produto é uma nuvem de pontos que possibilita a reconstrução do objeto em terceira dimensão.</p>
                         <p> Com isso, é possível visualizar pontos no terreno (que constituem o MDT – Modelo Digital de Terreno), assim como o Modelo Digital de Superfície – MDS, que compreende as edificações, 
                             árvores, obras viárias entre outros objetos, na forma nuvem de pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos 
@@ -882,20 +873,21 @@
                                         grupo Legislação Urbana, subgrupo Bens Protegidos, Utilidade Pública e Interesse.">
 
 
-                    <h3 id="marco-geodesico" >Marco Geodésico</h3>
-                        <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Marco Geodésico".</p>
+                    <h3 id="marco-geodesico" >Marco Geodésico e Pontos de Apoio Terrestre</h3>
+                        <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Marco Geodésico/Apoio".</p>
                         
-                        <p>O  Marco Geodésico é a terceira aba da janela de pesquisa e apresenta pontos
+                        <p>O  Marco Geodésico/Apoio é a terceira aba da janela de pesquisa e apresenta pontos
                             fixos no terreno usados como referencial cartográfico.</p>
                             
                         <!--Pesquisar como faz para ter largura máxima em xxl-->
                         <ol class="list-group list-group-numbered p-3 my-3">
-                            <li class="list-group-item">Primeiro,habilite a camada “Marco Geodésico”que esta em Meio físico/ Topografia.</li>
-                            <li class="list-group-item">No mapa,identifique o marco próximo a área de seu interesse.</li>
-                            <li class="list-group-item">Entre na ferramenta “pesquisar”, na aba Marco Geodésico” e preencha a lacuna “Número do pilar".</li>
-                            <li class="list-group-item">Na caixa a baixo, aparecerá o número do pilar, novamente.</li>
-                            <li class="list-group-item">Ao clicar o ponto estará centralizado na tela.</li>
-                            <li class="list-group-item"> Clique no ponto selecionado e mostrará a monografia do Marco Geodésico.</li>
+                            <li class="list-group-item">Primeiro, habilite a camada “Marco Geodésico” e "Apoio Terrestre", que estão em Meio Físico/ Topografia.</li>
+                            <li class="list-group-item">No mapa, identifique o marco próximo a área de seu interesse.</li>
+                            <li class="list-group-item">Entre na ferramenta “Pesquisar”, na aba "Marco Geodésico/Apoio”, selecione em "Tipo" que será
+                                consultado e em "Denominação", preencha com a identificação do marco/ponto de apoio terrestre.</li>
+                            <li class="list-group-item">Na caixa a baixo, aparecerá o identificador completo do marco/ponto de apoio, novamente.</li>
+                            <li class="list-group-item">Ao clicar o ponto, ele aparecerá centralizado na tela.</li>
+                            <li class="list-group-item"> Clique no ponto selecionado e será feito o download da monografia do Marco Geodésico/Ponto de Apoio Terrestre.</li>
                         </ol>
                     
                         <img src="images/marco-geodesico.jpg" class="img-fluid mx-auto justify-content-center pt-3 pb-5" height="100%"
@@ -962,7 +954,7 @@
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/pesquisa_sql.jpg" alt="imagem de setor-quadra" height="576px" width="1021px">
                     
                     <h3 id="IPTU">Consulta ao IPTU</h3>
-                        <p> À esquerda, localize a ferramenta “Pesquisar” , selecione a aba
+                        <p> À esquerda, localize a ferramenta “Pesquisar”, selecione a aba
                             IPTU e preencha as informações de setor, quadra e lote, depois clique
                             em “Listar”.</p>
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu.jpg"height="576px" width="1021px"> 

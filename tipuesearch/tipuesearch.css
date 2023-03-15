@@ -77,9 +77,8 @@
 }
 .tipue_search_content_title a
 {
-     font: 300 23px/1.6 'Open Sans', sans-serif;
-     text-rendering: optimizelegibility;
-	margin-top: 23px;
+     color: #3f72d8;
+     text-decoration: none;
 }
 .tipue_search_content_title a:hover
 {

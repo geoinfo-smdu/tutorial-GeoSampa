@@ -111,7 +111,7 @@
                                     <a id="nivel2" class="nav-link ms-5" href="#ferramentas-cursor">Menu de Ferramentas e Cursor</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#mapas-base-camadas">Mapas Base e Camadas</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#infos-feicoes-elementos">Informações - feições ou elementos do mapa</a>
-                                    <a id="nivel2" class="nav-link ms-5" href="#lidar3d">LiDAR 3D - MDT</a>
+                                    <a id="nivel2" class="nav-link ms-5" href="#lidar3d">LiDAR 3D - MDT e MDS</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#desenho-medicoes">Desenho e medições</a>
                                 </nav>
                             </nav>
@@ -360,6 +360,7 @@
                     <h3 id="ferramentas-cursor"><br><br>Menu de Ferramentas e tipos de cursor</h3>
 
                     <h4>Menu de Ferramentas</h4>
+                    <p>(Clique nas flechas ao lado dos botões para ler sobre cada um deles)</p>
                     <div class="row justify-content-xl-center">
                         <div class="col col-xl-8 py-3">
 
@@ -385,7 +386,7 @@
                                         </button>
                                     </h6>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushFerramentas">
-                                       <div class="accordion-body py-2 pe-5"> Exibe /oculta o controle de camadas. 
+                                       <div class="accordion-body py-2 pe-5"> Exibe/oculta o controle de camadas. 
                                         </div>
                                     </div>
                                 </div>
@@ -397,14 +398,15 @@
                                     </h4>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5"> Apresenta resumo dos atributos da(s) feição(ões) da(s) camada(s) escolhida(s), desde que ligada(s) e visível(is). Para isso, posicionar e clicar com a mira 
-                                            no local da(s) feição(ões) de interesse. Toda a explicação sobre Informações fiscais do lote, se encontram em "Menu de Ferramentas" --> "Informações"                              
+                                            no local da(s) feição(ões) de interesse.                              
                                         </div>
                                 </div>
                                 </div>
                                 <div class="accordion-item">
                                     <h6 class="accordion-header" id="flush-headingFour">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                            <img class="img p-1" src="images/botao_desfazer-selecao.png" alt="ícone com uma mão apontando com o dedo indicador e um sinal de parar sobreposto"> <strong>Desfazer seleção</strong>
+                                            <img class="img p-1" src="images/botao_desfazer-selecao.png" alt="ícone com uma mão apontando com o dedo indicador e um sinal de parar sobreposto"> 
+                                            <strong>Desfazer seleção</strong>
                                         </button>
                                     </h2>
                                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushFerramentas">
@@ -421,10 +423,11 @@
                                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5"> 
                                             Esta ferramenta apresenta dez abas.
-                                            Ao clicar na 1ª aba, <strong>“Subprefeitura”</strong> , aparecerá uma caixa com o nome de cada uma das 32 Subprefeituras. Ao selecionar uma com um clique, o zoom aproximará a Subprefeitura
-                                            escolhida para visualização. <br>
+                                            Ao clicar na 1ª aba, <strong>“Subprefeitura”</strong> , aparecerá uma caixa com o nome de cada uma das 32 Subprefeituras. Ao selecionar uma com 
+                                            um clique, o zoom aproximará a Subprefeitura escolhida para visualização. <br>
                                             A próxima aba <strong>“Distrito”</strong>  funciona da mesma forma. Selecionando um dos 92 Distritos, o zoom aproximará sua visualização. <br>
-                                            A terceira aba, <strong>“Marco Geodésico/Apoio”</strong> apresenta pontos fixos no terreno usados como referencial cartográfico. Para saber mais sobre o assunto, no menu lateral, clique em "Outras Consultas" --> "Marco Geodésico"
+                                            A terceira aba, <strong>“Marco Geodésico/Apoio”</strong> apresenta pontos fixos no terreno usados como referencial cartográfico. 
+                                            Para saber mais sobre o assunto <a href="#marco-geodesico">clique aqui</a>.
                                         </div>
                                 </div>
                                 </div>
@@ -436,11 +439,10 @@
                                     </h4>
                                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Após clicar nesse botão, escolha um dos temas do menu. De acordo com o tema escolhido,
-                                            será apresentada uma série de arquivos. Ao selecioná-los, o download será iniciado escolher a extensão do arquivo de
-                                            interesse (.shp, .kmz oudxf).<br>
-                                            Também podem ser baixados arquivos em formatos diversos pelo botão "Pesquisar", exigindo,
-                                            entretanto, seleção de regiões /folhas/fotos no mapa.
+                                            Após clicar nesse botão, escolha um dos temas do menu. De acordo com o tema escolhido, selecione a camada de interesse. 
+                                            Será apresentada uma série de arquivos. Ao selecionar o tipo de arquivo de interesse (GPKG, KMZ, SHP ou DXF), o download será iniciado.<br>
+                                            Também <a href="#download">podem ser baixados arquivos em formatos diversos pelo botão "Pesquisar"</a>, exigindo,
+                                            entretanto, seleção de regiões/folhas/fotos no mapa.
                                         </div>
                                 </div>
                                 </div>
@@ -452,11 +454,8 @@
                                     </h6>
                                     <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5"> 
-                                            Salve o mapa como imagem (arquivo tipo.jpg). A imagem salva será
-                                            exatamente como é vista na tela, incluindo os elementos das
-                                            camadas caso habilitadas.
-                                            Importante: pontos, linhas ou polígonos selecionados e/ou destacados em azul não
-                                            aparecerão na imagem salva.
+                                            Salve o mapa como imagem (arquivo tipo .jpg).<br>A imagem salva será exatamente como é vista na tela, incluindo os elementos das camadas, caso habilitadas.<br>
+                                            Importante: pontos, linhas ou polígonos selecionados e/ou destacados em azul não aparecerão na imagem salva.
                                         </div>
                                 </div>
                                 </div>
@@ -468,9 +467,8 @@
                                     </h6>
                                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Ao clicar nesse botão, o cursor estará habilitado para medir a distância entre pontos, a
-                                            área de um polígono ou o ângulo entre dois segmentos. Escolha a
-                                            opção desejada.  Para saber mais <a href="#desenho-medicoes">como calcular, área ângulos e distências.</a>
+                                            Ao clicar nesse botão, o cursor estará habilitado para medir a distância entre pontos, a área de um polígono ou o ângulo entre dois segmentos. 
+                                            Escolha a opção desejada.<br>Você pode saber mais sobre medições <a href="#desenho-medicoes">aqui</a>.
                                         </div>
                                 </div>
                                 </div>
@@ -482,7 +480,7 @@
                                     </h6>
                                     <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Habilita uma janela para desenho com opções de símbolos, formatos, texto e cores. <a href="#item4-3-2">Saiba mais.</a>
+                                            Habilita uma janela para desenho com opções de símbolos, formatos, texto e cores. <a href="#item4-3-2">Saiba mais</a>.
                                         </div>
                                 </div>
                                 </div>
@@ -494,8 +492,8 @@
                                     </h6>
                                     <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Laser/Lidar* é um aerolevantamento de 2017 e tem como resultado o Modelo Digital do Terreno (MDT). <br>
-                                            E podem ser usados para inúmeras aplicações com auxílio de diversos software. <a href="#MDT">Saiba mais.</a>
+                                            LiDAR é um aerolevantamento que tem como resultado uma nuvem de pontos a partir da qual se desenvolve o Modelo Digital de Superfície (MDS) e o 
+                                            Modelo Digital do Terreno (MDT).<br> <a href="#MDT">Saiba mais</a>.
                                         </div>
                                 </div>
                                 </div>
@@ -510,10 +508,11 @@
                                             A ferramenta de impressão permite a configuração de um título para seu mapa e a opção pela exibição de escala e
                                             legenda. Note que a legenda que aparecerá na impressão estará de acordo com o mapa base e as camadas habilitadas. A página de
                                             impressão está configurada no formato A4. <br> O enquadramento na prévia de impressão não é idêntico à tela. É possivel mover a imagem dentro
-                                            da moldura. Se necessário, altere a escala da tela para uma visualização adequada. <br> Para imprimir, clique no ícone da impressorano
-                                            canto direito inferior do mapa. Na tela de impressão que se abre, podese escolher uma impressora que converta para o formato PDF, o que
+                                            da moldura. Se necessário, altere a escala da tela para uma visualização adequada. <br> Para imprimir, clique no ícone da impressora no
+                                            canto direito inferior do mapa. Na tela de impressão que se abre, é possível escolher uma impressora que converta para o formato PDF, o que
                                             lhe permitirá alterar o tamanho da impressão. Neste caso, alertamos quanto à possibilidade de distorções.<br> Na parte de baixo será exibida a
-                                            legenda do mapa base e das camadas habilitadas. Também serão mostradas as informações das feições selecionadas com o botão “I”.
+                                            legenda do mapa base e das camadas habilitadas. Também serão mostradas as informações das feições selecionadas com o botão <img src="images/botao_informacao.png" 
+                                            alt="ícone do botão 'i', informação">.
                                         </div>
                                 </div>
                                 </div>
@@ -525,7 +524,7 @@
                                     </h6>
                                     <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Exibe / oculta na tela a escala gráfica e as coordenas (UTM ou geográfica).
+                                            Exibe/oculta na tela a escala gráfica e as coordenas (UTM ou geográfica).
                                         </div>
                                 </div>
                                 </div>
@@ -537,8 +536,8 @@
                                     </h6>
                                     <div id="flush-collapseThrirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThrirteen" data-bs-parent="#accordionFlushFerramentas">
                                        <div class="accordion-body py-2 pe-5">
-                                            Exibe uma caixa de diálogo informando todos os botões do menu lateral do Geosampa, as informações sobre os
-                                            navegadores compatíveis e os programas utilizados no desenvolvimento do GeoSampa.
+                                            Exibe uma caixa de diálogo informando todos os botões do menu lateral, as informações sobre os navegadores compatíveis e os programas utilizados 
+                                            no desenvolvimento do GeoSampa.
                                         </div>
                                 </div>
                                 </div>
@@ -551,7 +550,7 @@
                                     <div id="flush-collapseForteen" class="accordion-collapse collapse" aria-labelledby="flush-headingForteen" data-bs-parent="#accordionFlushFerramentas">
                                         <div class="accordion-body py-2 pe-5">
                                             Pode ser utilizado para enviar qualquer tipo de mensagem referente ao
-                                            portal. <br> Para entrar em contato com a equipe,preencha nome, e-mail e envie sua mensagem.
+                                            portal. <br> Para entrar em contato com a equipe, preencha nome, e-mail e envie sua mensagem.
                                         </div>
                                 </div>
                                 </div>
@@ -564,7 +563,7 @@
                     <h4>Tipos de cursor</h4>
 
                     <p>O <strong>cursor</strong> assume diferentes formas dependendo da sua função.</p>
-                    <p>Abaixo seus formatos com as funcionalidades possíveis em cada um com exemplos práticos de aplicabilidade.</p>
+                    <p>Abaixo estão os formatos que assume e as possíveis funcionalidades com exemplos de aplicabilidade.</p>
 
                     <div class="row m-xl-3 jutify-content-center" >
 
@@ -630,17 +629,18 @@
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_texto.png" style="width:35px;height:35px" alt="cursor texto">          
                                     <h6 class="card-title"><strong>Cursor de texto</strong></h6>
-                                    <p class="card-text"><br>Requer preenchimento de um campo.</p>
+                                    <p class="card-text"><br>Preenchimento de um campo.</p>
                                 </div>
                                 <img src="images/cursor_ex_texto.png" class="card-img-bottom" alt="exemplo do cursor de texto para preencher um número específico na caixa da diálogo da escala do mapa">
                             </div>
                         </div>
 
                     </div>
+                    <br><br>
 
-                    <h3 id="mapas-base-camadas"><br><br>Mapas Base e Camadas</h3>
+                    <h3 id="mapas-base-camadas">Mapas Base e Camadas</h3>
                         <p>Você pode escolher um dos mapas base disponíveis como plano de fundo, sendo possível alterá-lo a qualquer momento
-                        durante sua navegação. Entretanto, é permitido visualizar apenas um por vez. Também pode-se deixar sem plano de fundo. </p>
+                        durante sua navegação. Entretanto, é permitido visualizar apenas um por vez. Também é possível deixar sem plano de fundo. </p>
 
                         <img class="img-fluid mx-auto py-3" src="images/mapa-base_camadas.jpg" style="height: 576px; display: flex" alt="caixa de diálogo para seleção de mapas base e camadas, com destaque para
                             os menus 'Mapa Base', 'Camadas' e para o tema 'Absatecimento dentro do menu de camadas">
@@ -656,28 +656,25 @@
                         
 
                     <h3 id="infos-feicoes-elementos"><br><br>Informações sobre as feições ou elementos do mapa</h3>
-                        <p>Habilite, no menu à direita, as camadas das quais buscará mais informações. 
+                        <p>Habilite, no menu à direita, a camada da qual buscará mais informações. 
                         Lembre-se que as informações somente aparecerão para as camadas habilitadas no menu. 
                         A seguir, clique no botão <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/botao_informacao.png" 
-                            alt="ícone do botão 'i', informação"> e após, no elemento de interesse no mapa.</p>
+                            alt="ícone do botão 'i', informação"> e após no elemento de interesse no mapa.</p>
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/uso_botao-informacao.jpg" height="576px" width="1021px" alt="exemplo passo a passo do uso do botão 'i', informação: 
                             ativar camada de interesse, clicar no botão 'i', clicar no ponto de interesse no mapa">
 
    
                         <h4 id="infos-lotes">Informações fiscais do lote</h4>
 
-                            <p>O GeoSampa disponibiliza informações fiscais do lote, numa camada
-                                que é atualizada pela Secretaria da Fazenda. Essa camada substitui os
+                            <p>O GeoSampa disponibiliza informações fiscais do lote, numa camada que é atualizada pela Secretaria Municipal da Fazenda (SF). Essa camada substitui os
                                 croquis fiscais, que não são atualizados desde junho de 2019.</p>
 
-                            <p>Todas as informações do croqui fiscal estão no painel de informações
-                                (acessado pelo botão <img src="images/botao_informacao.png" 
-                                alt="ícone do botão 'i', informação"> ) conectado diretamente ao banco de dados da
-                                Secretaria da Fazenda.</p>
+                            <p>Todas as informações do croqui fiscal estão no painel de informações (acessado pelo botão <img src="images/botao_informacao.png" 
+                                alt="ícone do botão 'i', informação"> ) conectado diretamente ao banco de dados da SF.</p>
 
                             <ol class="list-group list-group-numbered p-3 my-3">
-                                <li class="list-group-item">Primeiro, aproxime o zoom para possibilitar a visualização e permitir acionar a camada;</li>
-                                <li class="list-group-item">Ligue a camada “Lotes”, no grupo: Cadastro / Cadastro Fiscal / Lote;</li>
+                                <li class="list-group-item">Primeiro, aproxime o zoom para possibilitar a visualização e permitir habilitar a camada;</li>
+                                <li class="list-group-item">Ligue a camada “Lote” no grupo "Cadastro", subgrupo "Cadastro Fiscal";</li>
                                 <li class="list-group-item">Clique no botão <img src="images/botao_informacao.png" 
                                     alt="ícone do botão 'i', informação"> (Informação), em seguida, no lote de interesse.</li>
                                 <li class="list-group-item">Aparecerá uma caixa de diálogo com as informações fiscais do lote.</li>
@@ -699,7 +696,7 @@
                                 lote, dígito SQL, CodLog, Nome do logradouro, múmero da porta, complemento, situação, uso, área do terreno e área construída.">
 
     
-                    <h3 id="lidar3d"><br><br>LiDAR 3D - Modelo Digital de Terreno (MDT)</h3>
+                    <h3 id="lidar3d"><br><br>LiDAR 3D - MDT e MDS</h3>
                         <p> A partir dos dados obtidos no aerolevantamento de 2017, utilizando um sensor laser emitindo feixes embarcados em helicóptero, 
                             foi realizada a cartografia 3D de toda a cidade. 
                             O produto é uma nuvem de pontos que possibilita a reconstrução do objeto em terceira dimensão.</p>

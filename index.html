@@ -101,6 +101,7 @@
                                     <a id="nivel2" class="nav-link ms-5" href="#dados-abertos">Dados Abertos</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#metadados">Metadados</a>
                                     <a id="nivel2" class="nav-link ms-5" href="#escala">Escala</a>
+                                    <a id="nivel2" class="nav-link ms-5" href="#sql">SQL - Setor-Quadra-Lote</a>
                                 </nav>
                             </nav>
 
@@ -321,20 +322,37 @@
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/conceitos_acessar-metadados.jpg" alt="tela inicial do GeoSampa indicando
                         o botão Acessar Metadados no canto superior direito" width="1021px">
                     
+
                     <h3 id="escala"><br><br>Escala</h3>
                         
-                        <h5>Escala cartográfica é a proporção de redução da área da paisagem real para sua representação no mapa. 
-                            Existem dois tipos de escalas cartográficas: numérica e gráfica.</h5>
-                        <h5><strong>Escala numérica:</strong> expressa o valor em números.</h5>
+                        <p>Escala cartográfica é a proporção de redução da área da paisagem real para sua representação no mapa. 
+                            Existem dois tipos de escalas cartográficas: numérica e gráfica.</p><br>
+                        <h6><strong>Escala numérica:</strong> expressa o valor em números.</h6>
                         <p>No GeoSampa a escala mostra a variante dessa proporção no canto inferior esquerdo do mapa.
                             Por exemplo: 100000 (cem mil). Isso significa que um centímetro no mapa corresponde a 100 centímetros 
-                            (equivalente a 1 quilômetro) na paisagem real.</p>
-                        <h5><strong>Escala gráfica:</strong> cada segmento da escala gráfica corresponde a certa distância, expressa em metros ou quilômetros.</h5>
-                        <p>&nbsp;</p>
+                            (equivalente a 1 quilômetro) na paisagem real.</p><br>
+                        <h6><strong>Escala gráfica:</strong> cada segmento da escala gráfica corresponde a certa distância, expressa em metros ou quilômetros.</h6><br>
                         <p>Para saber mais <a href="https://pt.wikipedia.org/wiki/Escala_cartogr%C3%A1fica">clique aqui</a>.</p>
+                        <p>&nbsp;</p>
 
+
+                    <h3 id="sql">SQL - Setor-Quadra-Lote</h3>
+
+                        <p>O código SQL (setor-quadra-lote) representa a identificação dos lotes
+                        no Cadastro Imobiliário Fiscal da PMSP. Este código corresponde ao
+                        número do contribuinte e pode ser localizado no boleto de pagamento
+                        do IPTU. Também é possível identificar o código SQL utilizando o
+                        GeoSampa, veja como a seguir.</p>
+
+                        <img class="img-fluid mx-auto p-2" src="images/sql_explicacao.jpg"  style="display: flex;"
+                        alt="Imagem mostrando o que é setor-quadra-lote no cadastro do imóvel. 
+                        O número é dividido em quatro partes compostas por 2 compostas por 3 dígitos que representam,
+                        respectivamente, o código do setor(três primeiros dígitos) e o código da quadra(do 4° ao 6° dígito). 
+                        Em seguida há uma parte do número composto por 4 dígitos que representam o código do lote. 
+                        O último dígito que é após o traço é um dígito verificador.">
 
                         <p>&nbsp;</p>
+
                     
                 <h1 id="tela-inicial-naveg"><br><br>Tela Inicial e Navegação</h1>
 
@@ -561,7 +579,7 @@
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_seta.png" style="width:35px;height:35px" alt="cursor seta">          
                                     <h6 class="card-title"><strong>Seta</strong></h6>
-                                    <p class="card-text">Permite escolher funcionalidades (botões, camadas etc) e navegação pelo mapa.</p>
+                                    <p class="card-text">Permite escolher funcionalidades (botões, camadas etc) e navegar pelo mapa.</p>
                                 </div>
                                 <img src="images/cursor_ex_seta.png" class="card-img-bottom" alt="exemplo de como aparece o cursor da seta, em cima do botão de 'contato'">
                             </div>
@@ -572,7 +590,8 @@
                                 <div class="card-body">
                                     <img class="card-img-top p-1" src="images/cursor_mira.png" style="width:35px;height:35px" alt="cursor mira">          
                                     <h6 class="card-title"><strong>Mira</strong></h6>
-                                    <p class="card-text">A partir a busca de <a href="#infos-lotes" >informações</a> e requer um ponto ou uma área no mapa.</p>
+                                    <p class="card-text">A partir do <a href="#infos-feicoes-elementos">uso do botão</a> <img src="https://raw.githubusercontent.com/geoinfo-smdu/tutorial-GeoSampa/master/images/botao_informacao.png" 
+                                        alt="ícone do botão 'i', informação"><br>Requer um ponto ou uma área no mapa.</p>
                                 </div>
                                 <img src="images/cursor_ex_mira.png" class="card-img-bottom" alt="exemplo de como aparece o cursor mira, para selecionar área no mapa">
                             </div>
@@ -595,7 +614,7 @@
                                     <img class="card-img-top p-1" src="images/cursor_quadrado.png" style="width:35px;height:35px" alt="cursor quadrado">          
                                     <h6 class="card-title"><strong>Quadrado</strong></h6>
                                     <p class="card-text">Aparece para medir distância, área e ângulo (não há
-                                        aderência/atração/ímã); a precisão da medida inferida no mapa é limitada pela escala.</p>
+                                        aderência/atração/ímã).<br>A precisão da medida inferida no mapa é limitada pela escala.</p>
                                 </div>
                                 <img src="images/cursor_ex_quadrado.png" class="card-img-bottom" alt="exemplo do cursor quadrado aparecendo para medir distância e área em um polígono">
                             </div>
@@ -649,23 +668,8 @@
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/uso_botao-informacao.jpg" height="576px" width="1021px" alt="exemplo passo a passo do uso do botão 'i', informação: 
                             ativar camada de interesse, clicar no botão 'i', clicar no ponto de interesse no mapa">
 
-
-                        <h4 id="infos-lotes">SQL - Setor-Quadra-Lote</h4>
-
-                            <p>O código SQL (setor-quadra-lote) representa a identificação dos lotes
-                            no Cadastro Imobiliário Fiscal da PMSP. Este código corresponde ao
-                            número do contribuinte e pode ser localizado no boleto de pagamento
-                            do IPTU. Também é possível identificar o código SQL utilizando o
-                            GeoSampa, veja como a seguir.</p>
-
-                            <img class="img-fluid mx-auto p-2" src="images/sql_explicacao.jpg"  style="display: flex;"
-                            alt="Imagem mostrando o que é setor-quadra-lote no cadastro do imóvel. 
-                            O número é dividido em quatro partes compostas por 2 compostas por 3 dígitos que representam,
-                            respectivamente, o código do setor(três primeiros dígitos) e o código da quadra(do 4° ao 6° dígito). 
-                            Em seguida há uma parte do número composto por 4 dígitos que representam o código do lote. 
-                            O último dígito que é após o traço é um dígito verificador.">
-                            
-                        <h4>Informações fiscais do lote</h4>
+   
+                        <h4 id="infos-lotes">Informações fiscais do lote</h4>
 
                             <p>O GeoSampa disponibiliza informações fiscais do lote, numa camada
                                 que é atualizada pela Secretaria da Fazenda. Essa camada substitui os

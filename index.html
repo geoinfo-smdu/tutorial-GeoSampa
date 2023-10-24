@@ -680,6 +680,8 @@
                                 <li class="list-group-item">Aparecerá uma caixa de diálogo com as informações fiscais do lote.</li>
                             </ol>
 
+                            <!-- Inserir explicação de como se pode encontrar o lote de interesse? Colocar link para Pesquisa por Endereço (#pesq-endereco)? -->
+
                             <img class="img-fluid mx-auto justify-content-center py-4" src="images/sql_informacao.jpg" height="576px" width="1021px"
                             alt="Imagem indicando o 'i' de informações como quarto botão do menu de ferramentas do lado esquerdo da página do geosampa.
                                 Mostra também lote selecionado e janela com as informações referentes a ele. As informações que aparecem são: setor, 
@@ -700,19 +702,20 @@
                         <p> A partir dos dados obtidos no aerolevantamento de 2017, utilizando um sensor laser emitindo feixes embarcados em helicóptero, 
                             foi realizada a cartografia 3D de toda a cidade. 
                             O produto é uma nuvem de pontos que possibilita a reconstrução do objeto em terceira dimensão.</p>
-                        <p> Com isso, é possível visualizar pontos no terreno (que constituem o MDT – Modelo Digital de Terreno), assim como o Modelo Digital de Superfície – MDS, que compreende as edificações, 
-                            árvores, obras viárias entre outros objetos, na forma nuvem de pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos 
-                            estão em formato LAZ (LAS compactado) e podem ser usados para inúmeras aplicações com auxílio de diversos softwares. Com esses dados, por exemplo, a cratera e a cachoeira na 
-                            zona sul da cidade ficam evidentes em imagens a baixo:</p>
+                        <p> Com isso, é possível visualizar pontos no terreno que constituem o Modelo Digital de Terreno (MDT), assim como o Modelo Digital de Superfície (MDS), ambos na forma de nuvem de 
+                            pontos no mapa digital. O conteúdo está disponível para download e para consulta web. Para download, os arquivos estão em formato LAZ (LAS compactado) e podem ser usados para 
+                            inúmeras aplicações com auxílio de diversos softwares. Com esses dados, por exemplo, a cratera e a cachoeira na zona sul da cidade ficam evidentes em imagens a baixo:</p>
                         <img class="img-fluid mx-auto justify-content-center px-2 py-5" src="images/lidar3d_ex1.jpg" alt="exemplo de mdt" height="350px" width="350px" 
                             alt="exemplos de imagens 3D hipsométricas produzidas a partir do Modelo Digital de Terreno - MDT">
                         <img class="img-fluid mx-auto justify-content-center px-2 pb-5" src="images/lidar3d_ex2.jpg" alt="segunda parte do exemplo" height="450px" width="450px">
                                 
-                        <p> Para a visualização web dos dados 3D, localize e clique na ferramenta  <img src="images/botao_lidar3d.jpg" alt="ícone LiDAR 3D"> "LiDAR 3D" e selecione a porção do território 
-                            da cidade que deseja visualizar. Após esse comando, abrirá uma tela para que escolher que tipo de dado se quer abrir no visualizador web: MDS, onde estão representados 
+                        <p> Para a visualização web dos dados 3D, clique no botão  <img src="images/botao_lidar3d.jpg" alt="ícone LiDAR 3D"> "LiDAR 3D" no menu à esquerda e selecione a porção do território 
+                            do município que deseja visualizar. Após esse comando, abrirá uma tela para escolher que tipo de dado se quer abrir no visualizador web: MDS, onde estão representados 
                             o terreno e as edificações, árvores, obras viárias e outros objetos; ou MDT, em que somente o terreno é representado.</p>
 
                         <iframe width="900" height="500" src="https://www.youtube.com/embed/8gQUa9nh5mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        <p>&nbsp;</p>
 
                         <p>Depois escolher seu local de interesse e o tipo de modelo digital, clique em “Visualizar” e você será direcionado para uma nova janela, fora do mapa do GeoSampa, 
                             onde serão carregados os dados do LiDAR. Nesse ambiente, você poderá aproximar a visualização do modelo 3D, bem como fazer medições e análises.</p>
@@ -743,8 +746,12 @@
                             onde você pode escolher quantos pontos vão estar disponíveis para visualização na nuvem de pontos, bem como ferramentas para medir altura de 
                             edificações, distâncias, ângulo, volume, etc.</p>
 
+                        <p>&nbsp;</p>
+
                         <iframe width="900" height="500" src="https://www.youtube.com/embed/hR_KjoM8e20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+                    <p>&nbsp;</p>
+                    
                     <h3 id="desenho-medicoes"><br><br>Desenho e medições</h3>
                         <h4>Calcular distâncias, área e ângulos</h4>
                             <p> Ao clicar no botão <img src="images/botao_medicoes-clique.png" style="height: 50px;"
@@ -768,7 +775,7 @@
                             <p> As distâncias de cada segmento traçado ficarão registradas nos
                                 trechos da medição e a área, no interior do polígono. 
                                 O ângulo será dado somente em relação ao último e seguimento feito e o anterior a este. </p>       
-                            <p>O resultado da medição não tem caráter documental nem precisão.</p>
+                            <p>O resultado da medição não tem caráter documental e a precisão é limitada pela escala.</p>
 
                         <h4>Ferramenta de Desenho</h4>
                             <p> Ao clicar na ferramenta de <strong>desenho</strong> <img src="images/botao_desenho.png" alt="ícone do botão de 'Desenho'">, uma janela será habilitada.</p>
@@ -784,20 +791,25 @@
                                 <li class="list-group-item">Selecione o tipo de desenho que deseja inserir.</li>
                                 <li class="list-group-item">Escolha a cor de sua preferência e, em seguida, insira o desenho no mapa.</li>
                                 <li class="list-group-item">Seu desenho poderá ser movido ou editado utilizando as ferramentas da parte inferior da janela.</li>
-                                <li class="list-group-item">Se desejar apagar apenas um dos elementos inseridos, clique no botão <img src="images/botao_limpar-desenho.png" alt="imagem do ícone lixeira, 
-                                    para apagar desenho"> e, em seguida, no desenho desejado.</li>
+                                <li class="list-group-item">Se desejar apagar apenas um dos elementos inseridos, clique no botão 
+                                    <img src="images/botao_limpar-desenho.png" alt="imagem do ícone lixeira, para apagar desenho"> e, em seguida, no desenho desejado.</li>
                             </ol>
                                 
                             <p> Os desenhos inseridos ficarão ativos apenas durante cada seção de navegação. Caso feche o
-                                GeoSampa, ou desligue o navegador, os desenhos não serão salvos.</p>
+                                GeoSampa ou o navegador, os desenhos não serão salvos.</p>
 
                 <h1 id="download"><br><br>Download</h1>  
 
                     <hr>
 
+                    <p>Todo o conteúdo do GeoSampa está disponível para download.<br>Com exceção dos casos em que se faz a partir da aba de pesquisa 
+                        <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> 
+                        (croquis e plantas, marco geodésico e apoio terrestre, imagem/MDC), os downloads são feitos clicando no botão 
+                        <img src="images/botao_download.png" alt="ícone de download de arquivos">.
+                    </p>
+
                     <h3 id="download-arquivos"><br><br>Download de arquivos</h3>                
-                        <p>Todo o conteúdo do GeoSampa está disponível para download. 
-                            Para isso, clique no ícone <img src="images/botao_download.png" alt="ícone de download de arquivos"> 
+                        <p>Clique no ícone <img src="images/botao_download.png" alt="ícone de download de arquivos"> 
                             escolha o tema de interesse e, em seguida, os arquivos desejados.  </p>
                         
                         <p>Alguns arquivos podem estar divididos por distritos (como "Edificação", por
@@ -814,7 +826,7 @@
                         <p>Alguns deles estão disponíveis em mais de um formato. São eles:</p>
 
                             <table>
-				<colgroup>
+				<colgroup> <!-- Diminuir o tamanho da letra -->
 				       <col span="1" style="width: 15%;">
 				       <col span="1" style="width: 85%;">
    				</colgroup>
@@ -853,11 +865,11 @@
                                         <td>GeoPackage: formato de dados aberto, não proprietário, baseado em padrões para sistema de informações 
                                             geográficas implementado como um banco de dados.</td>
                                     </tr>
-				    <tr>
+				                    <tr>
                                         <td><strong>JPEG | JPG</strong></td>
                                         <td>Joint Photographic Experts Group: formato de arquivo aberto de imagem comprimido para redução do tamanho. 
-					Geralmente é acompanhado de arquivo .aux com a informações de localização geográfica para ser utilizado em softwares
-					de geoprocessamento.</td>
+					                        Geralmente é acompanhado de arquivo .aux com a informações de localização geográfica para ser utilizado 
+                                            em softwares de geoprocessamento.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -866,7 +878,8 @@
 
                     <h3 id="download-croquis-plantas"><br><br>Download de croquis e plantas</h3>
                         
-                        <p> Para realizar o download você precisará clicar na aba "Área Pública/Planta" no menu <strong>Pesquisar</strong>. <!--Colocar imagem do botão "Pesquisar"?-->
+                        <p> Para realizar o download você precisará clicar na aba "Área Pública/Planta" no menu <strong>Pesquisar</strong> 
+                            <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'">. 
                             Em seguida escolher entre as quatro opções para localizar e fazer o download dos documentos após habilitar a camada correspondente.</p>
 
                         <p> As camadas Cadastro de Área Pública - CAP, Croqui Patrimonial e Área
@@ -895,7 +908,8 @@
 
 
                     <h3 id="marco-geodesico" ><br><br>Marco Geodésico e Pontos de Apoio Terrestre</h3>
-                        <p> Para realizar o download você precisará, no MENU pesquisa, ativar a aba: "Marco Geodésico/Apoio".</p>
+                        <p> Para realizar o download você precisará, no menu pesquisar <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'">, 
+                            ativar a aba: "Marco Geodésico/Apoio".</p>
                         
                         <p>O  Marco Geodésico/Apoio é a terceira aba da janela de pesquisa e apresenta pontos
                             fixos no terreno usados como referencial cartográfico.</p>
@@ -916,7 +930,8 @@
 
                     <h3 id="img-mdc" ><br><br>Download de imagens/MDC</h3>
 
-                        <p> Para realizar o download você precisará, no MENU pesquisa <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'">, ativar a aba: "Download de Imagens/MDC".</p>
+                        <p> Para realizar o download você precisará, no menu pesquisar <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'">, 
+                            ativar a aba: "Download de Imagens/MDC".</p>
 
                         <ol class="list-group list-group-numbered p-3 my-3">
                             <li class="list-group-item">Primeiro selecione o tipo de download de imagem desejado.</li>
@@ -973,15 +988,14 @@
                         com número, que destaca o ponto respectivo ao endereço no mapa">
                             
                     <h3 id="lotefiscal-sql"><br><br>Pesquisa por lote fiscal - SQL</h3>
-                        <p> A aba Setor-Quadra aproxima a visualização do lote, após o
-                            preenchimento das lacunas .</p>
+                        <p>Clique em <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'">. Na janela de pesquisa, a aba Setor-Quadra aproxima a visualização do lote, após o
+                            preenchimento das lacunas.</p>
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/pesquisa_sql.jpg" alt="imagem de setor-quadra" height="576px" width="1021px"
                             alt="Janela de pesquisa com a aba 'Setor-Quadra' ativada, com pesquisa por um lote com os campos 'Setor', 'Quadra' e 'Lote' preenchidos e lote em destaque no mapa">
                     
                     <h3 id="IPTU"><br><br>Consulta ao IPTU</h3>
-                        <p> À esquerda, localize a ferramenta “Pesquisar”, selecione a aba
-                            IPTU e preencha as informações de setor, quadra e lote, depois clique
-                            em “Listar”.</p>
+                        <p> À esquerda, localize a ferramenta “Pesquisar” <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> e selecione a aba
+                            IPTU. Preencha as informações de setor, quadra e lote, depois clique em “Listar”.</p>
                         <img class="img-fluid mx-auto justify-content-center py-3" src="images/iptu.jpg"height="576px" width="1021px" alt="Janela de pesquisa com a aba 'IPTU' ativada, 
                             com pesquisa pelo preenchimento dos campos 'Setor', 'Quadra' e 'Lote'"> 
                         <p> Aparecerá uma caixa para verificação de acesso e depois as 
@@ -994,7 +1008,7 @@
                             e preencha Setor, Quadra e Lote. <br> O resultado apresenta: zoneamento, parâmetros de ocupação, quota ambiental e notas - quadro 3 da lei n° 16.402/2016. </p>  
                         <img class="img-fluid mx-auto justify-content-center py-4"  src="images/siszon.jpg" alt="Janela de pesquisa com a aba 'Zoneamento' ativada, com pesquisa por um lote com os campos 'Setor', 'Quadra' 
                             e 'Lote' preenchidos e lote em destaque no mapa">
-                        <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado</p>  
+                        <p>Clique em “Visualizar Impressão”, na parte superior direita, e obtenha um relatório formatado.</p>  
                         <img class="img-fluid mx-auto justify-content-center py-4" src="images/siszon_relatorio.jpg" alt="Resultado da pesquisa de Zoneamento para um lote, com destaque para o botão 'Visualizar Impressão no canto 
                             superior direito da janela em questão e mais uma janela de mensagem com orientações no caso necessidade de atendimento sobre zoneamento, indicando link para mais informações" height="576px" width="1021px">
                         <p>Para saber mais informações sobre o zoneamento, observe a caixa <strong>“Mensagem” </strong> e vá no link <strong>“clique aqui”</strong>. </p>  
@@ -1002,7 +1016,7 @@
                             height="700px" width="px">
         
                     <h3 id="licenciamento"><br><br>Pesquisa sobre Licenciamento - sistema SLCe</h3>
-                        <p>O Sistema de Licenciamento Eletrônico de Construção é gerenciado pela Secretaria Municipal de Licenciamento e compila os seguintes processos:</p>
+                        <p>O Sistema de Licenciamento Eletrônico de Construção (SLCe) é gerenciado pela Secretaria Municipal de Urbanismo e Licenciamento (SMUL) e compila os seguintes processos:</p>
                         <div class="row">
                             <div class="column">
                             <h6> I- Licenciamento de edificação nova ou reforma para os seguintes usos:</h6>
@@ -1021,7 +1035,7 @@
                         <ol class="list-group list-group-numbered p-3 my-3">
                             <li class="list-group-item">Primeiro, à esquerda, localize a ferramenta “Pesquisar”, selecione a aba ”Licenciamento” e preencha as informações de setor, quadra e lote, depois clique em “Listar”.</li>
                             <li class="list-group-item">Para obter um relatório em PDF, vá até “Documento Alvará SLCe”, clique em “Clique aqui para abrir”. </li>
-                            <li class="list-group-item">Abrirá uma caixa de diálogo com as informações disponíveis no SLCe sobre ao SQL informado. </li>
+                            <li class="list-group-item">Abrirá uma caixa de diálogo com as informações disponíveis no SLCe sobre o SQL informado. </li>
                             <li class="list-group-item">Ao clicar no link “Clique aqui para abrir” o documento fica disponível para visualização e download.</p></li>
                         </ol>
                                     
@@ -1032,7 +1046,8 @@
 
                     <h3 id="tombamento"><br><br>Consulta ao CIT – Cadastro de Imóveis Tombados</h3>
                         <p>Consulta e emissão de certidão digital que esclarece sobre a situação do imóvel quanto à incidência ou não de legislação de tombamento.</p>
-                        <p>Localize a ferramenta “Pesquisar” e vá até a aba CIT, digite as informações de setor, quadra e lotes e clique em “Listar”.</p>
+                        <p>Clique no botão <strong>Pesquisar</strong> <img src="images/botao_pesquisa.png" alt="ícone lupa, botão 'Pesquisar'"> e vá até a aba CIT.
+                            Digite as informações de setor, quadra e lote e clique em “Listar”.</p>
 
                     <img  class="img-fluid mx-auto justify-content-center py-3" src="images/cadastro-imoveis-tombados1.jpg" height="576px" width="1021px"
                         alt="Janela de pesquisa com a aba 'CIT' ativada, com pesquisa por 'Setor', 'Quadra' e 'Lote'">
@@ -1057,20 +1072,19 @@
                             selecionado o território da subprefeitura em questão, possibilitando rapidamente sua localização no mapa.</p>
                         
                         <p>A segunda consulta estruturada é dos Distritos e funciona tal qual a das Subprefeituras. No menu 
-                            <strong>Pesquisar</strong>, selecione a aba Distrito e escolhe o distrito de interesse e esse 
+                            <strong>Pesquisar</strong>, clique na aba Distrito, selecione o distrito de interesse e esse 
                             será selecionando, permanecendo destacado em azul.</p>
 
         <p>&nbsp;</p>
 
                 <h1 id="sobre-geosampa"><br><br>Saiba mais sobre o Geosampa</h1>
                     <h3><br><br>Histórico</h3>
-                        <p> O MDC é o suporte cartográfico do Sistema de Informações
+                        <p> O Mapa Digital da Cidade (MDC) é o suporte cartográfico do Sistema de Informações
                             Geográficas do Município de São Paulo (SIG-SP), regulamentado pelo
                             Decreto 57.770, de 3 de julho de 2017.
-                            O Mapa Digital da Cidade (MDC), é uma base cartográfica digital
-                            cadastral nas escalas 1:1.000, na área urbana, e 1:5.000, na área rural
-                            do Município de São Paulo, resultado de levantamento
-                            aerofotogramétrico realizado no ano de 2004, com recursos do
+                            O MDC, é uma base cartográfica digital cadastral nas escalas 1:1.000, 
+                            na área urbana, e 1:5.000, na área rural do Município de São Paulo, resultado 
+                            de levantamento aerofotogramétrico realizado no ano de 2004, com recursos do
                             Programa de Modernização da Administração Tributária (PMAT), do
                             Banco Nacional do Desenvolvimento (BNDES).
                             A construção do MDC incluiu a implantação da Rede Básica de
@@ -1083,28 +1097,29 @@
                             imóveis e logradouros, entre outros produtos e serviços.
                             Esses trabalhos permitiram a modernização do sistema cartográfico
                             municipal, que já em 1978 foi digitalizado em um sistema pioneiro
-                            denominado Geocodificação de Logradouros – GEOLOG. Os desafios
+                            denominado Geocodificação de Logradouros (GEOLOG). Os desafios
                             da atualização e disseminação desses dados demandam permanente
                             evolução tecnológica e organizacional.
                             Em 2017, foi realizado um aerolevantamento que produziu além de
                             ortofotos e mapeamento detalhado da vegetação, a cobertura de toda a
-                            cidade por dados laser/ lidar.
+                            cidade por dados LiDAR.
                         </p>
                     <h3><br><br>O GeoSampa</h3>
                         <p>O resultado dessas atividades pode ser usado no portal GeoSampa,
-                            disponível desde dezembro/2014.
+                            disponível desde dezembro de 2014.
                             A partir do mapa também é possível realizar download de arquivos
                             georreferenciados, mapas, plantas, croquis, imagens de satélite, fotos
                             aéreas e ortofotos.
-                            Atualmente, são disponibilizadas mais de 200 camadas temáticas com
+                            Atualmente, são disponibilizadas mais de 300 camadas temáticas com
                             informações cadastrais (310 setores, 55.000 quadras e 2,5 milhões de
                             lotes fiscais), a localização de cada uma das cerca de 650.000 árvores
-                            do sistema viário, os perímetros do zoneamento da Cidade, a
+                            do sistema viário, os perímetros do zoneamento do município, a
                             localização dos equipamentos públicos nas áreas de educação,
-                            saúde, assistência social, cultura, esportes e lazer, a localização e situação das 400 áreas de risco do município. Arquivos
-                            em formatos .shp, .kmz, .dxf, .pdf e .jpg também podem ser baixados
-                            contendo tanto as informações vetoriais do mapa como fotos, ortofotos
-                            e cartas. Para o servidor, o sistema tem permitido a redução do tempo de
+                            saúde, assistência social, cultura, esportes e lazer, a localização 
+                            e situação das 400 áreas de risco do município. Arquivos em formatos 
+                            .shp, .kmz, .dxf, .pdf e .jpg também podem ser baixados contendo tanto 
+                            as informações vetoriais do mapa como fotos, ortofotos e cartas. 
+                            Para o servidor público municipal, o sistema tem permitido a redução do tempo de
                             resposta a processos administrativos pelo acesso único e simplificado
                             aos dados. Para o público externo tais como órgãos públicos estaduais
                             e federais, estudantes, empresas, conselhos gestores, organizações
@@ -1118,12 +1133,13 @@
                         <p>O SIG-SP é o instrumento para a produção, manutenção, análise, disseminação e
                             divulgação de informações mapeadas como subsídios para o planejamento,
                             implementação e gestão de políticas públicas nas áreas de atuação do governo
-                            municipal, priorizando o atendimento ao cidadão. O sistema é constituído, de forma integrada, pelos subsistemas de pessoas,
-                            procedimentos organizacionais, dados, programas e equipamentos computacionais,
-                            abrangendo os dados sociais, culturais, econômicos, financeiros, patrimoniais,
-                            urbanísticos, administrativos, físico-territoriais, ambientais, geológicos, geográficos,
-                            cartográficos e outros de interesse do Município, sendo, essencialmente, um sistema
-                            aberto, dinâmico e permanente, em constante adequação à realidade urbana.
+                            municipal, priorizando o atendimento ao cidadão. O sistema é constituído, de 
+                            forma integrada, pelos subsistemas de pessoas, procedimentos organizacionais, dados, 
+                            programas e equipamentos computacionais, abrangendo os dados sociais, culturais, econômicos, 
+                            financeiros, patrimoniais, urbanísticos, administrativos, físico-territoriais, 
+                            ambientais, geológicos, geográficos, cartográficos e outros de interesse do Município, 
+                            sendo, essencialmente, um sistema aberto, dinâmico e permanente, em constante 
+                            adequação à realidade urbana.
                             Nesses termos e diante do grande volume de informações disponíveis na
                             administração municipal, a Prefeitura de São Paulo optou pela adoção de uma visão
                             integradora. Ao invés da construção de um novo sistema ou mesmo da migração de
@@ -1139,21 +1155,21 @@
                             primeiros meses de projeto. Como principais etapas, destacam-se 1) a
                             construção da base corporativa de dados pela organização dos dados
                             cartográficos (Mapa Digital da Cidade), cadastrais (setor, quadra, lotes,
-                            logradouros) e temáticos; 2) a implantação de um sistema de infra-estrutura
+                            logradouros) e temáticos; 2) a implantação de um sistema de infraestrutura
                             dos dados municipais; 3) elaboração do catálogo de metadados e 4) a
                             integração das bases e sistemas já existentes via conversão de dados
                             espaciais.
                             Para garantir a sustentabilidade do projeto, foram utilizadas geotecnologias
                             compatíveis com as diretrizes nacionais de dados espaciais e ainda
-                            tecnologias GEOSERVER / OpenLayers para a construção da Infraestrutura
+                            as tecnologias GeoServer e OpenLayers para a construção da Infraestrutura
                             de Dados Espaciais, além do portal de mapas. Trata-se do primeiro projeto de
                             geoprocessamento na Prefeitura de São Paulo a usar tecnologia de software
                             livre. 
                             Dentre os requisitos técnicos de implantação, vale destacar a definição de
                             padrões de intercâmbio de dados geográficos, compatível com a Open
-                            Geospatial Consortium – OGC, concretizando uma visão voltada para a
-                            transparência, compartilhamento que garanta a operabilidade e o efetivo uso
-                            das informações geoespaciais.
+                            Geospatial Consortium (OGC), concretizando uma visão voltada para a
+                            transparência e compartilhamento que garanta a operabilidade e o efetivo 
+                            uso das informações geoespaciais.
                         </p>
                     <p>&nbsp;</p>
 
@@ -1164,11 +1180,13 @@
                             <p><strong>Coordenação</strong></p>
                             <p>Beatriz Cervino Milla<br>Luciana Pascarelli dos Santos<br>Steffano Esteves de Vasconcelos</p>
                             <p><strong>Elaboração e execução</strong></p>
-                            <p>Aline Priscila da Silva<br>Flora Edith Naomi Waragaya<br>
-                                Beatriz Cervino Milla<br>Steffano Esteves de Vasconcelos<br>
-                                Amanda Mendes de Sousa<br>Luciana Pascarelli dos Santos<br>
-	    			Luciana Chakarian Kuada</p>
-        <p>&nbsp;</p>
+                            <p>Amanda Mendes de Sousa<br>Beatriz Cervino Milla<br>
+                                Steffano Esteves de Vasconcelos<br>Luciana Pascarelli dos Santos<br>
+	    			            Luciana Chakarian Kuada<br>Aline Priscila da Silva (ex-membra da equipe)<br>
+                                Flora Edith Naomi Waragaya (ex-membra da equipe)</p>
+
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
                 
             </div>
 
